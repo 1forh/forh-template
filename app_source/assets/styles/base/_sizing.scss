@@ -1,0 +1,36 @@
+/*
+ Sizing Variables
+*/
+$pad:1.5rem;
+
+/*
+  Sizing Mixins
+*/
+
+/*
+ Sizing Styles
+*/
+
+ul{
+  margin:0;
+  padding-left:25px;
+
+}
+
+.row{
+  padding-bottom:$pad;
+}
+
+.main-content{
+  padding:$pad * 2 0 $pad 0;
+  a{
+    font-weight:bold;
+  }
+}
+
+.main-section{
+  
+  ul{
+    margin-bottom:1em;
+  }
+}

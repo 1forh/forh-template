@@ -1,0 +1,22 @@
+/*
+  Page:Accordion variables
+*/
+
+/*
+  Page:Accordion mixins
+*/
+
+/*
+  Page:Accordion styles
+*/ 
+
+.accordion{
+  padding:0;
+  @include shadow-1;
+  a{
+    color:$body-link-color;
+    &:hover{
+      color:$body-link-color;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+/*
+  Page:Index variables
+*/
+
+/*
+  Page:Index mixins
+*/
+
+/*
+  Page:Index styles
+*/ 
+
+.hours-wrapper{
+  border:7px solid $primary-color;
+  padding:1.4em;
+  @include shadow-1;
+  @include breakpoint(large down){
+    margin-bottom:1em;
+  }
+}
+.hours-title{
+  padding-bottom:0.4em;
+  display:block;
+  font-weight:bold;
+  color:darken($primary-color, 30%);
+}
+.hours{
+  ul{
+    list-style:none;
+    margin:0;
+    margin-bottom:1.4em;
+    padding:0;
+    li{
+      padding:0.2em 0;
+      border-bottom:1px solid #DDD;
+      span{
+        float:left;
+      }
+      .value{
+        float:right;
+      }
+    }
+  }
+}
+
+.row-about{
+  header{
+    text-align:center;
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "paths": {
+    "src": "app_source/",
+    "build": "app_build/",
+    "dist": "app_dist/"
+  },
+  "styles": {
+    "version": [
+      "last 2 versions", 
+      "ie >= 9"
+    ],
+    "paths" : [
+      "bower_components/foundation-sites/scss"
+    ],
+    "critical": {
+      "inline": "true",
+      "width": 1200,
+      "height": 900
+    }
+  },
+  "scripts": {
+    "paths" : [
+      "bower_components/jquery/dist/jquery.js",
+      "bower_components/what-input/what-input.js",
+      "bower_components/foundation-sites/js/foundation.core.js",
+      "bower_components/foundation-sites/js/foundation.util.*.js",
+      "bower_components/foundation-sites/js/foundation.*.js",
+      "app_source/assets/scripts/**/*.js",
+      "app_source/assets/scripts/main.js"
+    ]
+  },
+  "extras": {
+    "paths" : [
+      "app_source/robots.txt",
+      "app_source/favicon.{png,icon,jpg}",
+      "app_source/*.html",
+      "app_source/*.xml"
+    ]
+  },
+  "browsersync": {
+    "port": 4000
+  },
+  "sitemap": {
+    "siteUrl" : "http://www.samplesite.com",
+    "changefreq" : "yearly"
+  },
+  "deploy": {
+    "files": "app_dist/**",
+    "location": "/public_html/projects/test",
+    "host": "somehostsite.com",
+    "user": "username",
+    "password": "password"
+  }
+}

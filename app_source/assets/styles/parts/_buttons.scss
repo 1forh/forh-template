@@ -1,0 +1,25 @@
+/*
+Button variables
+
+*/
+$facebook:#3B5998;
+$google:#D50F25;
+$twitter:#6CADDE;
+
+/*
+Button mixins
+
+*/
+
+/*
+  Button styles
+
+*/
+.button{
+  background:$button-background-color;
+  color:$button-text-color !important;
+  @include transition;
+  &:hover{
+    background:$button-background-color-hover;
+  }
+}

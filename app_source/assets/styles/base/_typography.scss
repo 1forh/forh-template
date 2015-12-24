@@ -1,0 +1,33 @@
+/*
+ Typography Variables
+*/
+
+/*
+ Typography Mixins
+*/
+
+/*
+ Typography Styles
+*/
+body{
+  color:$body-p-color;
+  font-size:17px;
+  @include font-stack-body;
+}
+h1,h2,h3,h4,h5{
+  color:$body-h-color;
+  @include font-stack-header;
+}
+header{
+
+}
+
+.subheader{
+  font-size:1.5em;
+}
+a{
+  color:$body-link-color;
+  &:hover{
+    color:$body-link-color-hover;
+  }
+}

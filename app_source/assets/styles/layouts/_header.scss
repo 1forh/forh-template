@@ -1,0 +1,125 @@
+/*
+  Header variables
+*/
+
+/*
+  Header mixins
+*/
+
+/*
+  Header styles
+*/
+.site-header-wrapper{
+  display:flex;
+  flex-direction:column;
+  border-bottom:3px solid $primary-color;
+  @include shadow-1;
+
+  .row.inner-wrapper{
+    padding:0;
+  }
+}
+.site-header-top{
+  padding:0.5em 0;
+
+  background:$header-background-color;
+  @include breakpoint(medium down){
+    order:1;
+  }
+  .inner-wrapper{
+    display:flex;
+    justify-content:flex-end;
+
+    @include breakpoint(medium down){
+      flex-direction:column;
+      justify-content:flex-start;
+      text-align:center;
+      font-size:1.2em;
+    }
+  }
+  .box{
+    span,
+    a{
+      color:$header-link-color;
+      i{
+        color:inherit;
+      }
+    }
+  }
+  .social{
+    flex-grow: 1;
+
+    @include breakpoint(medium down){
+      flex-grow:0;
+    }
+    a{
+      padding-right:0.5em;
+      color:$header-link-color;
+      i{
+        color:inherit;
+      }
+    }
+  }
+  .telephone,
+  .hours,
+  .email{
+    padding-left:1em;
+  }
+}
+
+.site-header-bottom{
+  padding:1.2em 0;
+
+  .inner-wrapper{
+    display:flex;
+    justify-content:flex-end;
+
+    @include breakpoint(medium down){
+      flex-direction:column;
+      justify-content:flex-start;
+      text-align:center;
+    }
+  }
+  .logo{
+    flex-grow: 1;
+    
+    font-size:1.3em;
+    @include breakpoint(medium down){
+      font-size:1.5em;
+      margin-bottom:0.5em;
+    }
+  }
+  .site-nav{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    
+    @include breakpoint(medium down){
+      flex-direction:column;
+    }
+    li{
+      padding: 0 0.6em;
+
+      @include breakpoint(medium down){
+        flex-direction:column;
+        min-height:50px;
+      }
+      a{
+        display:block;
+        color:$header-link-text-color;
+        padding:0.5em 0.7em;
+        @include transition;
+
+        &:hover{
+          color:$header-link-text-active;
+          background:$header-link-background-active;
+        }
+      }
+      .active{
+        color:$header-link-text-active;
+        background:$header-link-background-active;
+      }
+    }
+  }
+}

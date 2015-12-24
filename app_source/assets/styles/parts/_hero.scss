@@ -1,0 +1,50 @@
+/*
+  Hero variables
+*/
+$hero-pad:4em;
+
+/*
+  Hero mixins
+*/
+
+/*
+  Hero styles
+*/
+.hero{
+  position:relative;
+  padding:$hero-pad 0;
+  text-align:center;
+  background:url("../images/bg.jpg") no-repeat bottom center;
+  background-size: cover;
+
+  @include breakpoint(small down){
+    padding: $hero-pad/2 0;
+  }
+  .hero-message{
+    position:relative;
+    z-index:200;
+
+    .mainheader{
+      color:$hero-mainheader-color;
+    }
+    .subheader{
+      color:$hero-subheader-color;
+      margin-bottom:2em;
+
+    }
+    a{
+      margin:0;
+    }
+  }
+  &::after{
+    content:'';
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:100;
+    width:100%;
+    height:100%;
+    background-color:$hero-background-color;
+  }
+}
+

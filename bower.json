@@ -1,0 +1,22 @@
+{
+  "name": "forh-template",
+  "version": "1.0.0",
+  "homepage": "https://github.com/1forh/forh-template",
+  "authors": [
+    "Zachary Minner <1forhlol@gmail.com>"
+  ],
+  "description": "Static site generator template",
+  "main": "gulpfile.js",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation-sites": "~6.0.3"
+  }
+}
