@@ -28,7 +28,6 @@ Install project dependencies:
 
 
     npm install
-    npm install gulp
     bower install
 
 
