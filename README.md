@@ -1,7 +1,7 @@
 #Forh Template
+
 ###Static Website Generator
 
-- Star Wars Theme --- Fake text: http://star-wars-ipsum.herokuapp.com/
 - SCSS
 - NPM 
 - Bower
@@ -9,29 +9,25 @@
 
 Made with Foundation 6 --- http://foundation.zurb.com
 
+Icon font --- https://materialdesignicons.com
+
 Made with Panini --- http://foundation.zurb.com/sites/docs/panini.html
 
 Panini Documentation: https://github.com/zurb/panini
-
-Icon font --- https://materialdesignicons.com
 
 ## Setup
 
 Navigate to directory and download repo:
 
-
     cd path/to/directory
     git clone https://github.com/1forh/hls-template-0
 
-
 Install project dependencies:
-
 
     npm install
     bower install
 
-
-`npm start` starts a server that is viewable at: `http://localhost:4000`. 
+`npm start` serves `app_build` at: `http://localhost:4000`. 
 
 `npm run build:dist` does a production build
 
@@ -65,12 +61,9 @@ All work is done in the `app_source/` directory.
 
 `data/` houses all json or yml data
 
-Outside of the sub folders, extra files can be place like the favicon, robots.txt, a Google Webmaster Tools authentication file, etc. 
-
+ Extra files can be placed outside of the sub folders like the favicon, robots.txt, a Google Webmaster Tools authentication file, etc. 
 
 ##Data
-
-
 
 `data/sample.json` - Sample json file that holds some data
 
@@ -99,6 +92,16 @@ Code sample iterating through `sample.json` for each item in the array of object
     <p>Description: {{description}}</p>
     <p>Price: {{price}}</p>
     {{/each}}
+
+##Build Directory - app_build
+
+Running `npm start` starts a server at `http://localhost:4000` and serves static files from the `app_build` directory. These static files are semi-optimized while viewed on the server. 
+
+###Optimizations
+
+- Concatenated styles and scripts
+- Autoprefixer
+- Sourcemaps
 
 ##Dist Directory - app_dist
 
