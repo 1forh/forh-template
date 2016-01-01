@@ -43,12 +43,5 @@
   "sitemap": {
     "siteUrl" : "http://www.samplesite.com",
     "changefreq" : "yearly"
-  },
-  "deploy": {
-    "files": "app_dist/**",
-    "location": "/public_html/projects/test",
-    "host": "somehostsite.com",
-    "user": "username",
-    "password": "password"
   }
 }

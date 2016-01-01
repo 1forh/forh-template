@@ -34,9 +34,9 @@ Install project dependencies:
 
 `npm start` starts a server that is viewable at: `http://localhost:4000`. 
 
-`npm run dist` does a production build and then starts a server that is viewable at: `http://localhost:4000`
+`npm run build:dist` does a production build
 
-`npm run deploy` to deploy to ftp server - config in `gulp/deploy.js`
+`npm run serve:dist` does a production build and then starts a server that is viewable at: `http://localhost:4000`
 
 All Gulp task configuration is done in `gulpfile.js/config.json`
 

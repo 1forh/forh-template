@@ -5,8 +5,8 @@
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp serve",
-    "dist": "gulp serve:dist",
-    "deploy": "gulp deploy"
+    "serve:dist": "gulp serve:dist",
+    "build:dist": "gulp build:dist"
   },
   "author": "1forh <me@zacharyminner.com>",
   "homepage": "https://github.com/1forh/forh-template#readme",
