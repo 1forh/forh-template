@@ -99,3 +99,7 @@ Code sample iterating through `sample.json` for each item in the array of object
     <p>Description: {{description}}</p>
     <p>Price: {{price}}</p>
     {{/each}}
+
+##Dist Directory - app_dist
+
+Running the `npm run build:dist` command adds production ready static files to this directory. The files in this directory need to be uploaded to a server after build.
