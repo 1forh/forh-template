@@ -42,6 +42,6 @@
   },
   "sitemap": {
     "siteUrl" : "http://www.samplesite.com",
-    "changefreq" : "yearly"
+    "changeFreq" : "yearly"
   }
 }
