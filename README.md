@@ -106,3 +106,11 @@ Running `npm start` starts a server at `http://localhost:4000` and serves static
 ##Dist Directory - app_dist
 
 Running the `npm run build:dist` command adds production ready static files to this directory. The files in this directory need to be uploaded to a server after build.
+
+###Optimizations
+
+- Inline above-the-fold styles with Critical
+- Minified styles
+- Uglify scripts
+- Autoprefixer
+- Image optimization with Imagemin
