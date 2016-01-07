@@ -63,7 +63,7 @@ All work is done in the `app_source/` directory.
 
  Extra files can be placed outside of the sub folders like the favicon, robots.txt, a Google Webmaster Tools authentication file, etc. 
 
-##Data
+###Data
 
 `data/sample.json` - Sample json file that holds some data
 
