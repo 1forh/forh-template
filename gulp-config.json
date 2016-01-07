@@ -1,8 +1,9 @@
 {
   "paths": {
-    "src": "app_source/",
-    "build": "app_build/",
-    "dist": "app_dist/"
+    "src": "src/",
+    "build": "build/",
+    "dist": "dist/",
+    "test": "test/"
   },
   "styles": {
     "version": [
@@ -25,16 +26,16 @@
       "bower_components/foundation-sites/js/foundation.core.js",
       "bower_components/foundation-sites/js/foundation.util.*.js",
       "bower_components/foundation-sites/js/foundation.*.js",
-      "app_source/assets/scripts/**/*.js",
-      "app_source/assets/scripts/main.js"
+      "src/assets/scripts/**/*.js",
+      "src/assets/scripts/main.js"
     ]
   },
   "extras": {
     "paths" : [
-      "app_source/robots.txt",
-      "app_source/favicon.{png,icon,jpg}",
-      "app_source/*.html",
-      "app_source/*.xml"
+      "src/robots.txt",
+      "src/favicon.{png,icon,jpg}",
+      "src/*.html",
+      "src/*.xml"
     ]
   },
   "browsersync": {

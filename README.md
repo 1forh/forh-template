@@ -11,8 +11,6 @@ Made with Foundation 6 --- http://foundation.zurb.com
 
 Icon font --- https://materialdesignicons.com
 
-Made with Panini --- http://foundation.zurb.com/sites/docs/panini.html
-
 Panini Documentation: https://github.com/zurb/panini
 
 ## Setup
@@ -20,26 +18,26 @@ Panini Documentation: https://github.com/zurb/panini
 Navigate to directory and download repo:
 
     cd path/to/directory
-    git clone https://github.com/1forh/hls-template-0
+    git clone https://github.com/1forh/forh-template
 
 Install project dependencies:
 
     npm install
     bower install
 
-`npm start` serves `app_build` at: `http://localhost:4000`. 
+`npm start` serves `build/` at: `http://localhost:4000`. 
 
 `npm run build:dist` does a production build
 
 `npm run serve:dist` does a production build and then starts a server that is viewable at: `http://localhost:4000`
 
-All Gulp task configuration is done in `gulpfile.js/config.json`
+All Gulp task configuration is done in `gulp-config.json`
 
-##Source Directory - app_source
+##Source Directory - src/
 
-All work is done in the `app_source/` directory.
+All work is done in the `src/` directory.
 
-###Example Structure - app_source 
+###Example Structure - src/
 
     assets/
     layouts/
@@ -65,7 +63,7 @@ All work is done in the `app_source/` directory.
 
 ###Data
 
-`data/sample.json` - Sample json file that holds some data
+`src/data/sample.json` - Sample json file that holds some data
 
     [
       {
@@ -93,9 +91,9 @@ Code sample iterating through `sample.json` for each item in the array of object
     <p>Price: {{price}}</p>
     {{/each}}
 
-##Build Directory - app_build
+##Build Directory - build/
 
-Running `npm start` starts a server at `http://localhost:4000` and serves static files from the `app_build` directory. These static files are semi-optimized while viewed on the server. 
+Running `npm start` starts a server at `http://localhost:4000` and serves static files from the `build/` directory. These static files are semi-optimized while viewed on the server. 
 
 ###Optimizations
 
@@ -103,7 +101,7 @@ Running `npm start` starts a server at `http://localhost:4000` and serves static
 - Autoprefixer
 - Sourcemaps
 
-##Dist Directory - app_dist
+##Dist Directory - dist/
 
 Running the `npm run build:dist` command adds production ready static files to this directory. The files in this directory need to be uploaded to a server after build.
 
@@ -114,3 +112,5 @@ Running the `npm run build:dist` command adds production ready static files to t
 - Uglify scripts
 - Autoprefixer
 - Image optimization with Imagemin
+
+##Test Directory - test/
