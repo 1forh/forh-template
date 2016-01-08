@@ -1,7 +1,7 @@
 {
   "name": "forh-template",
   "version": "1.0.0",
-  "description": "Template website made for work using Foundation 6",
+  "description": "Static website generator",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp serve",
