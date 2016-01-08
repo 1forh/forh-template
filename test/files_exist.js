@@ -1,3 +1,6 @@
+var requireDir = require('require-dir');
+requireDir('./dist');
+
 var chai = require('chai');
 
 var expect = chai.expect;
