@@ -1,5 +1,5 @@
 var requireDir = require('require-dir');
-requireDir('./gulpfile.js');
+requireDir('../gulpfile.js');
 
 var chai = require('chai');
 

@@ -1,5 +1,5 @@
 var requireDir = require('require-dir');
-requireDir('./dist');
+requireDir('../dist');
 
 var chai = require('chai');
 
