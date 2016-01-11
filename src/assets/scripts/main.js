@@ -20,7 +20,7 @@ $(document).foundation();
     var hero = $('#hero');
     var height = hero.height();
 
-    sec.css('margin-top', height + 100);
+    sec.css('margin-top', height + 50);
   }();
 
   // Toggle navigation on mobile
