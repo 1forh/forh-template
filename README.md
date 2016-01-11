@@ -115,10 +115,8 @@ Running the `npm run build:dist` command adds production ready static files to t
 
 ##Test Directory - test/
 
-Running the `npm test` command runs all tests from the `test/` directory and outputs the results in the terminal
+Running the `npm test` command runs all tests from the `test/` directory. Uses Mocha and Chai for tests
 
 ###Tests
-
-- `files_exist.js` checks for expected files in `dist/` directory
 
 TBD
