@@ -23,6 +23,24 @@ $(document).foundation();
     sec.css('margin-top', height + 100);
   }();
 
+  // Toggle navigation on mobile
+  var nav_toggle = function(){
+    var open = $('#nav-open');
+    var close = $('#nav-close');
+    var menu = $('#site-nav');
+
+    open.on('click', function() {
+      menu.show();
+      open.hide();
+      close.show();
+    });
+    close.on('click', function() {
+      menu.hide();
+      open.show();
+      close.hide();
+    });
+  }();
+
   // Stop scroll on mouse over map
   $('#map_canvas').addClass('scrolloff'); 
   $('#map').on('click', function () {

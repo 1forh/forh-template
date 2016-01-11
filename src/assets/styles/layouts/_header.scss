@@ -38,31 +38,57 @@ $header-border: 2px solid rgba($white, 0.4);
   border-bottom:$header-border;
 
   padding:1em 0;
+
 }
 
 .site-logo{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
 
+  @include breakpoint(small down){
+    text-align:center;
+    margin-bottom:1.2em;
+  }
 }
 
 .site-logo__text{
   font-size:1.3em;
+
+  @include breakpoint(small down){
+    font-size:1.7em;
+  }
 }
 
 .site-nav{
   display:flex;
+  justify-content:flex-end;
+  
+  @include breakpoint(small down){
+    flex-direction:column;
+  }
 }
 
 .site-nav__menu{
   display:flex;
   list-style:none;
-
+  
   padding:0;
   margin:0;
+  
+  @include breakpoint(small down){
+    flex-direction:column;
+    width:100%;
 
+  }
   &.social{
     border-left:$header-border;
 
     margin-left:4em;
+
+    @include breakpoint(small down){
+      border:none;
+    }
     
     i{
       font-size:1.4em;
@@ -81,5 +107,47 @@ $header-border: 2px solid rgba($white, 0.4);
   a{
     display:block;
     font-weight:bold;
+  }
+}
+
+.js-menu{
+  @include breakpoint(small down){
+    display:none;
+  }
+}
+
+.social{
+  @include breakpoint(small down){
+    display:none;
+  }
+}
+
+.site-nav__toggle{
+  i{
+    color:$white;
+    font-size:3em;
+  }
+}
+
+#nav-open{
+  display:none;
+  @include breakpoint(small down){
+    display:block;
+  }
+}
+
+#nav-close{
+  display:none;
+}
+
+#site-nav{
+  
+  @include breakpoint(small down){
+    background-color:$primary-color;
+    display:none;
+
+    li{
+      padding:1em 0;
+    }
   }
 }

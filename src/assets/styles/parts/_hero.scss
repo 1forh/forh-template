@@ -26,6 +26,10 @@ $hero-height:800px;
   left:0;
   z-index:100;
 
+  @include breakpoint(small down){
+    height:$hero-height / 1.3;
+  }
+
   &:after{
     content:'';
     background-color:rgba($primary-color, 0.3);
@@ -37,6 +41,10 @@ $hero-height:800px;
     top:0;
     left:0;
     z-index:200;
+
+    @include breakpoint(small down){
+      height:$hero-height / 1.3;
+    }
   }
 }
 
@@ -62,6 +70,11 @@ $hero-height:800px;
     max-width:40%;
 
     padding:3em 6em 3em 3em;
+
+    @include breakpoint(small down){
+      max-width:100%;
+      padding:2em;
+    }
   }
 
   header{
@@ -88,6 +101,9 @@ $hero-height:800px;
   right:0;
   z-index:300;
   
+  @include breakpoint(small down){
+    display:none;
+  }
   .columns{
     position:relative;
     &:before{
