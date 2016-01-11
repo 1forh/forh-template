@@ -26,7 +26,7 @@
   color:$white;
   
   .columns{
-    @include breakpoint(small){
+    @include breakpoint(small down){
       margin-bottom:1.5em;
     }
   }
@@ -116,7 +116,7 @@
     width:100%;
     padding:2em 0;
     
-    @include breakpoint(small){
+    @include breakpoint(small down){
       display:none;
     }
     h5{
@@ -160,7 +160,7 @@
     min-height:700px;
     border:none;
 
-    @include breakpoint(small){
+    @include breakpoint(small down){
       min-height:250px;
     }
   }
