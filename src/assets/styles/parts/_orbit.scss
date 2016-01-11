@@ -1,0 +1,41 @@
+/*
+  Orbit variables
+*/
+
+/*
+  Orbit mixins
+*/
+
+/*
+  Orbit styles
+*/ 
+
+.orbit{
+
+}
+
+.orbit-container{
+  @include shadow-1;
+}
+
+.orbit-slide{
+  
+  blockquote{
+   
+    .quotes{
+      quotes: "“" "”";
+
+      &:before{
+        content: open-quote;
+      }
+      &:after{
+        content: close-quote;
+      }
+    }
+
+    .author{
+      display:block;
+      margin-top:1em;
+    }
+  }
+}

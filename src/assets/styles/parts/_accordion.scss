@@ -1,22 +1,29 @@
 /*
-  Page:Accordion variables
+  Accordion variables
 */
 
 /*
-  Page:Accordion mixins
+  Accordion mixins
 */
 
 /*
-  Page:Accordion styles
+  Accordion styles
 */ 
-
 .accordion{
-  padding:0;
-  @include shadow-1;
-  a{
-    color:$body-link-color;
-    &:hover{
-      color:$body-link-color;
-    }
-  }
+
+}
+
+.accordion-item{
+  
+}
+
+.accordion-title{
+  font-weight:bold;
+  font-size:0.9em;
+}
+
+.accordion-item.is-active .accordion-title{
+  background-color:$secondary-color;
+  color:$white;
+  
 }

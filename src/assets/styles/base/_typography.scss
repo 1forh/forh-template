@@ -10,24 +10,31 @@
  Typography Styles
 */
 body{
-  color:$body-p-color;
   font-size:17px;
   @include font-stack-body;
 }
+
 h1,h2,h3,h4,h5{
-  color:$body-h-color;
+  color:darken($primary-color, 10%);
   @include font-stack-header;
 }
-header{
 
+h5.white,
+h3.white{
+  color:$white;
 }
 
-.subheader{
-  font-size:1.5em;
-}
 a{
-  color:$body-link-color;
+  
   &:hover{
-    color:$body-link-color-hover;
+   
   }
+}
+
+hr{
+  background-color:$secondary-color;
+  border:none;
+  height:4px;
+  width:70px;
+  margin:0 0 2em 0;
 }

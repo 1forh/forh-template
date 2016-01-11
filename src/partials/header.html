@@ -1,51 +1,58 @@
-<header class="site-header-wrapper">
-  <div class="site-header-top">
-    <div class="row inner-wrapper">
-      <div class="social box">
-        <a href="#!" class="facebook" target="_blank">
-          <i class="mdi mdi-facebook"></i> 
-        </a>
-        <a href="#!" class="twitter" target="_blank">
-          <i class="mdi mdi-twitter"></i> 
-        </a>
-        <a href="#!" class="googlePlus" target="_blank">
-          <i class="mdi mdi-google-plus"></i> 
-        </a>
-        <a href="#!" class="instagram" target="_blank">
-          <i class="mdi mdi-instagram"></i>
-        </a>
-      </div>
-      <div class="telephone box">
-        <a href="#!">
-          <i class="mdi mdi-phone"></i> 
-          (555) 555-5555
-        </a>
-      </div>
-      <div class="hours box">
-        <span>
-          <i class="mdi mdi-clock"></i> 
-          Mon-Fri 8:00 to 5:00
+<header id="site-header" class="site-header">
+  <div class="site-header__top">
+    <div class="row">
+      <div class="columns">
+        <span class="quote">
+          Lorem ipsum dolor sit amet.
         </span>
       </div>
-      <div class="email box">
-        <a href="#!">
-        <i class="mdi mdi-email"></i> 
-        contact@yourdomain.com
-        </a>
+      <div class="columns">
+        <span class="telephone">
+          <i class="mdi mdi-phone"></i>
+          CALL TODAY: <a href="tel:{{config.telephone}}">{{config.telephone}}</a>
+        </span>
+      </div>
+      <div class="columns">
+        <span class="email">
+          <i class="mdi mdi-email"></i>
+          <a href="mailto:{{config.email}}">{{config.email}}</a>
+        </span>
+      </div>
+      <div class="columns">
+        <span class="hours">
+          <i class="mdi mdi-clock"></i>
+          Mon - Sat: 9AM - 6PM
+        </span>
       </div>
     </div>
   </div>
-  <div class="site-header-bottom">
-      <nav class="row inner-wrapper">
-        <div class="logo">
-          <a href="index.html"><span class="logo">Star Wars Theme</span></a>
-        </div>
-        <ul class="site-nav">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+  <div class="row site-header__bottom">
+    <div class="columns site-logo">
+      <a href="index.html">
+        <span class="site-logo__text">
+          Forh Template
+        </span>
+      </a>
+    </div>
+    <nav class="columns site-nav">
+      <ul class="site-nav__menu">
+        <li class="site-nav__item"><a href="index.html">Home</a></li>
+        <li class="site-nav__item"><a href="about.html">About</a></li>
+        <li class="site-nav__item"><a href="#!">Services</a></li>
+        <li class="site-nav__item"><a href="#!">Contact</a></li>
+      </ul>
+      <ul  class="site-nav__menu social">
+        <li  class="site-nav__item">
+          <a href="#!" target="_blank">
+            <i class="mdi mdi-facebook"></i>
+          </a>
+        </li>
+        <li  class="site-nav__item">
+          <a href="#!" target="_blank">
+            <i class="mdi mdi-google-plus"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </header>

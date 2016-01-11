@@ -1,11 +1,6 @@
 /*
   Footer variables
 */
-$pad:2em 0;
-
-$social-pad:0.8rem;
-$social-marg:1rem;
-$social-font-size:1.5em;
 
 /*
   Footer mixins
@@ -15,29 +10,16 @@ $social-font-size:1.5em;
   Footer styles
 */
 .site-footer{
-  padding:$pad;
-  background:$footer-background-color;
-  color:$footer-text-color;
+  background:$primary-color;
+  color:$white;
   text-align:center;
-  .row{
-    padding:0;
-  }
-  @include breakpoint(small down){
-    text-align:center;
-  }
-  .social{
-    margin:0;
-    margin-bottom:$social-marg;
-    padding:$social-pad;
-    font-size:$social-font-size;
-    span{
-      display:none;
-    }
+  
+  padding:1em 0;
+
+  a{
+    color:$white;
   }
   p{
     margin:0;
-  }
-  a{
-    color:$footer-link-color;
   }
 }

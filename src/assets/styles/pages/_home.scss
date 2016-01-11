@@ -10,41 +10,146 @@
   Page:Index styles
 */ 
 
-.hours-wrapper{
-  border:7px solid $primary-color;
-  padding:1.4em;
-  @include shadow-1;
-  @include breakpoint(large down){
+.page-section{
+  padding:4em 0;
+
+  header{
+    text-transform:uppercase;
     margin-bottom:1em;
+
+ 
   }
 }
-.hours-title{
-  padding-bottom:0.4em;
-  display:block;
-  font-weight:bold;
-  color:darken($primary-color, 30%);
-}
-.hours{
-  ul{
-    list-style:none;
+
+.page-section.overlay{
+  background-color:$primary-color;
+  color:$white;
+
+ .card{
+  background-color:$white;
+  color:$black;
+ }
+
+ .card__header{
+  padding:0.8em 1.4em 0.8em;
+  padding-bottom:0;
+  margin:0;
+  
+  h4{
     margin:0;
-    margin-bottom:1.4em;
-    padding:0;
-    li{
-      padding:0.2em 0;
-      border-bottom:1px solid #DDD;
-      span{
-        float:left;
+  }
+ }
+
+ .card__body{
+  padding:1.4em;
+  p{
+    color:lighten($black, 40%);
+  }
+ }
+}
+
+.page-section.overlay-image{
+  position:relative;
+  background: url(../images/shuttle.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  .row{
+    position:relative;
+    z-index:200;
+  }
+
+  &:before{
+    content:'';
+    background-color:rgba($white, 0.7);
+
+    position:absolute;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+  }
+}
+
+.page-section__contact{
+  background:#eee;
+  .overlay{
+    background-color:$primary-color;
+
+  }
+  .columns{
+    padding:4em 3em;
+
+    .columns{
+      padding:1em;
+      
+      i{
+        font-size:2.0em;
+        color:$secondary-color;
       }
-      .value{
-        float:right;
+      h4{
+        display:inline;
       }
     }
   }
 }
 
-.row-about{
-  header{
-    text-align:center;
+.section-map{
+  position:relative;
+ 
+  .map-overlay{  
+    color:$white;
+    
+    position:absolute;
+    bottom:0;
+    left:0;
+    z-index:100;
+    
+    width:100%;
+    padding:2em 0;
+
+    h5{
+      margin-bottom:1em;
+    }
+
+    i{
+      color:$secondary-color;
+
+    }
+    
+    a{
+      color:inherit;
+    }
+
+    &:after{
+      content:'';
+      background:rgba($primary-color, 0.8);
+      
+      position:absolute;
+      top:0;
+      left:0;
+      z-index:50;
+
+      width:100%;
+      height:100%;
+    }
+
+    .columns{
+      position:relative;
+      z-index:400;
+    }
+  }
+
+  .scrolloff {
+    pointer-events: none;
+  }
+
+   iframe{
+    width:100%;
+    min-height:700px;
+    border:none;
   }
 }

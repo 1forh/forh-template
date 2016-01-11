@@ -1,7 +1,7 @@
 /*
   Header variables
 */
-
+$header-border: 2px solid rgba($white, 0.4);
 /*
   Header mixins
 */
@@ -9,118 +9,77 @@
 /*
   Header styles
 */
-.site-header-wrapper{
-  display:flex;
-  flex-direction:column;
-  border-bottom:3px solid $primary-color;
-  @include shadow-1;
+.site-header{
+  color:$white;
 
-  .row.inner-wrapper{
-    padding:0;
-    width:98%;
+  width:100%;
+
+  position:relative;
+  top:0;
+  left:0;
+  z-index:200;
+
+  i{
+    color:$secondary-color;
+  }
+  a{
+    color:inherit;
   }
 }
-.site-header-top{
+
+.site-header__top{
+  background-color:rgba($primary-color, .7);
+  text-align:center;
+
   padding:0.5em 0;
+}
 
-  background:$header-background-color;
-  @include breakpoint(medium down){
-    order:1;
-  }
-  .inner-wrapper{
-    display:flex;
-    justify-content:flex-end;
+.site-header__bottom{
+  border-bottom:$header-border;
 
-    @include breakpoint(medium down){
-      flex-direction:column;
-      justify-content:flex-start;
-      text-align:center;
-      font-size:1.2em;
-    }
-  }
-  .box{
-    span,
-    a{
-      color:$header-link-color;
-      i{
-        color:inherit;
-      }
-    }
-  }
-  .social{
-    flex-grow: 1;
+  padding:1em 0;
+}
 
-    @include breakpoint(medium down){
-      flex-grow:0;
+.site-logo{
+
+}
+
+.site-logo__text{
+  font-size:1.3em;
+}
+
+.site-nav{
+  display:flex;
+}
+
+.site-nav__menu{
+  display:flex;
+  list-style:none;
+
+  padding:0;
+  margin:0;
+
+  &.social{
+    border-left:$header-border;
+
+    margin-left:4em;
+    
+    i{
+      font-size:1.4em;
+      color:$white;
     }
-    a{
-      padding-right:0.5em;
-      color:$header-link-color;
-      i{
-        color:inherit;
-      }
-    }
-  }
-  .telephone,
-  .hours,
-  .email{
-    padding-left:1em;
   }
 }
 
-.site-header-bottom{
-  padding:1.2em 0;
+.site-nav__item{
+  display:flex;
+  align-items:center;
+  justify-content:center;
 
-  .inner-wrapper{
-    display:flex;
-    justify-content:flex-end;
+  padding:0 1em;
 
-    @include breakpoint(medium down){
-      flex-direction:column;
-      justify-content:flex-start;
-      text-align:center;
-    }
-  }
-  .logo{
-    flex-grow: 1;
-    
-    font-size:1.3em;
-    @include breakpoint(medium down){
-      font-size:1.5em;
-      margin-bottom:0.5em;
-    }
-  }
-  .site-nav{
-    list-style:none;
-    margin:0;
-    padding:0;
-    display:flex;
-    
-    @include breakpoint(medium down){
-      flex-direction:column;
-    }
-    li{
-      padding: 0 0.6em;
-
-      @include breakpoint(medium down){
-        flex-direction:column;
-        min-height:50px;
-      }
-      a{
-        display:block;
-        color:$header-link-text-color;
-        padding:0.5em 0.7em;
-        @include transition;
-
-        &:hover{
-          color:$header-link-text-active;
-          background:$header-link-background-active;
-        }
-      }
-      .active{
-        color:$header-link-text-active;
-        background:$header-link-background-active;
-      }
-    }
+  a{
+    display:block;
+    font-weight:bold;
   }
 }

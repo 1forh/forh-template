@@ -16,10 +16,6 @@ Button mixins
 
 */
 .button{
-  background:$button-background-color;
-  color:$button-text-color !important;
-  @include transition;
-  &:hover{
-    background:$button-background-color-hover;
-  }
+  border-radius:8px;
+  @include shadow-1;
 }

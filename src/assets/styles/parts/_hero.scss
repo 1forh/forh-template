@@ -1,7 +1,7 @@
 /*
   Hero variables
 */
-$hero-pad:4em;
+$hero-height:800px;
 
 /*
   Hero mixins
@@ -10,41 +10,107 @@ $hero-pad:4em;
 /*
   Hero styles
 */
-.hero{
-  position:relative;
-  padding:$hero-pad 0;
-  text-align:center;
-  background:url("../images/bg.jpg") no-repeat bottom center;
+.site-hero-page,
+.site-hero{
+  background: url(../images/space-bg.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 
-  @include breakpoint(small down){
-    padding: $hero-pad/2 0;
-  }
-  .hero-message{
-    position:relative;
-    z-index:200;
+  width:100%;
+  height:$hero-height;
 
-    .mainheader{
-      color:$hero-mainheader-color;
-    }
-    .subheader{
-      color:$hero-subheader-color;
-      margin-bottom:2em;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:100;
 
-    }
-    a{
-      margin:0;
-    }
-  }
-  &::after{
+  &:after{
     content:'';
-    position:absolute;
-    left:0;
-    top:0;
-    z-index:100;
+    background-color:rgba($primary-color, 0.3);
+
     width:100%;
-    height:100%;
-    background-color:$hero-background-color;
+    height:$hero-height;
+
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:200;
   }
 }
 
+.site-hero-page{
+  height: $hero-height / 1.8;
+
+  &:after{
+    content:'';
+    height:$hero-height / 1.8;
+
+  }
+}
+
+.site-hero__message{
+  position:relative;
+  left:0;
+  z-index:300;
+  
+  .columns{
+    background-color:rgba($primary-color, .7);
+    color:$white;
+
+    max-width:40%;
+
+    padding:3em 6em 3em 3em;
+  }
+
+  header{
+    text-transform:uppercase;
+    margin-bottom:1em;
+    
+    h1{
+      color:$white;
+    }
+  }
+}
+
+.site-hero__bottom{
+  background-color:$primary-color;
+  color:$white;
+  text-align:center;
+
+  width:100%;
+  padding:0.8em 0;
+
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index:300;
+  
+  .columns{
+    position:relative;
+    &:before{
+      content: url('../images/icons/android.png');
+      color:$white;
+      
+      height:50px;
+      position:absolute;
+      top:-95px;
+      left:0;
+      right:0; 
+      z-index:400;
+      
+      /* scales the generated content */
+      transform: scale(1.3);
+    }
+    &:nth-child(even){
+      &:before{
+        content: url('../images/icons/cloud-outline.png');
+      }
+    }
+  }
+  p{
+    margin:0;
+  }
+}

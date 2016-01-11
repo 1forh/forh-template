@@ -1,46 +1,32 @@
 /*
-  Global-colors...obviously.
+  Colors...obviously.
 */
 
 /*
   Theme Colors
 */
-$primary-color:#00AECD;
-
+$primary-color:#183650;
+$secondary-color:#4FC3F7;
 /*
   Default colors
 */
-$body-p-color:$black;
-$body-h-color:darken($primary-color, 25%);
-$body-link-color:$primary-color;
-$body-link-color-hover:darken($primary-color, 25%);
+
 
 /*
   Header colors
 */
-$header-background-color:$primary-color;
-$header-link-text-color:darken($primary-color, 25%);
-$header-link-color:$white;
-$header-link-text-active:$white;
-$header-link-background-active:$primary-color;
+
 
 /*
   Hero colors
 */
-$hero-background-color:rgba($primary-color, 0.5);
-$hero-mainheader-color:$white;
-$hero-subheader-color:$white;
+
 
 /*
   Footer colors
 */
-$footer-background-color: $primary-color;
-$footer-text-color:darken($primary-color, 20%);
-$footer-link-color:darken($primary-color, 20%);
+
 
 /*
   Button colors
 */
-$button-background-color:$primary-color;
-$button-background-color-hover:darken($button-background-color, 10%);
-$button-text-color:$white;

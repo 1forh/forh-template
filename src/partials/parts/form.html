@@ -1,14 +1,21 @@
-<form>
-  <label>Full Name
-    <input type="text" name="fullName" placeholder="John Smith">
+<form method="POST">
+  <div class="row">
+    <div class="columns medium-6">
+      <label>
+        Full Name:
+        <input type="text" name="fullName">
+      </label>
+    </div>
+    <div class="columns medium-6">
+      <label>
+        Email Address:
+        <input type="text" name="email">
+      </label>
+    </div>
+  </div> 
+  <label>
+    Message:
+    <textarea name="message"></textarea>
   </label>
-  <label>Email Address
-    <input type="email" name="email" placeholder="someemail@address.com">
-  </label>
-  <label>Message
-    <textarea name="message" rows="3" placeholder="Leave message here..."></textarea>
-  </label>
-  
-  <input type="submit" value="Submit" class="button">
-
+  <input type="submit" value="Submit" name="submit" class="button">
 </form>
