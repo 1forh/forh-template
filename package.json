@@ -26,27 +26,27 @@
   },
   "devDependencies": {
     "browser-sync": "^2.10.0",
+    "chai": "*",
     "critical": "^0.6.0",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-changed": "^1.3.0",
     "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.0",
     "gulp-filter": "^3.0.1",
     "gulp-if": "^2.0.0",
     "gulp-imagemin": "^2.4.0",
-    "gulp-minify-css": "^1.2.1",
     "gulp-plumber": "^1.0.1",
     "gulp-sass": "^2.1.0",
     "gulp-sitemap": "^2.2.0",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.1",
     "imagemin": "^4.0.0",
+    "mocha": "*",
     "panini": "^1.0.0",
     "require-dir": "^0.3.0",
     "rimraf": "^2.4.4",
-    "run-sequence": "^1.1.5",
-    "chai": "*",
-    "mocha": "*"
+    "run-sequence": "^1.1.5"
   },
   "private": true
 }

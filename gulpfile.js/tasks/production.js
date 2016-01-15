@@ -3,7 +3,7 @@ var config = require('../../gulp-config');
 var gulp = require('gulp');
 var sequence = require('run-sequence');
 var browser = require( 'browser-sync' );
-var minifyCss = require('gulp-minify-css');
+var cssnano = require('gulp-cssnano');
 var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
 var critical = require('critical').stream;
@@ -21,7 +21,7 @@ gulp.task('dist:extras', function() {
 gulp.task('dist:sass', ['sass'], function(){
   return gulp.src(config.paths.build + 'assets/styles/main.css')
       
-      .pipe(minifyCss())
+      .pipe(cssnano())
       .pipe(gulp.dest(config.paths.dist + 'assets/styles/'));
 });
 
