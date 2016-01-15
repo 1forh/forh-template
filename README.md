@@ -9,7 +9,7 @@
 
 Made with Foundation 6 --- http://foundation.zurb.com
 
-Icon font --- https://materialdesignicons.com
+Icon font --- https://fortawesome.github.io/Font-Awesome/
 
 Panini Documentation: https://github.com/zurb/panini
 
