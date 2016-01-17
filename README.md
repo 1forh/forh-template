@@ -31,6 +31,8 @@ Install project dependencies:
 
 `npm run serve:dist` does a production build and then starts a server that is viewable at: `http://localhost:4000`
 
+`npm run deploy` can be run after `npm run build:dist` to deploy to a server using FTP. Also runs the `gulp psi` task whichs console.log's Page Speed Insights Scores.
+
 All Gulp task configuration is done in `gulp-config.json`
 
 ##Source Directory - src/

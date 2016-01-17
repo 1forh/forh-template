@@ -1,4 +1,11 @@
 {
+  "site": {
+    "url" : "http://www.samplesite.com",
+    "host": "hosting.com",
+    "user": "username",
+    "password": "password",
+    "uploadPath": "/public_html"
+  },
   "paths": {
     "src": "src/",
     "build": "build/",
@@ -41,9 +48,5 @@
   },
   "browsersync": {
     "port": 4000
-  },
-  "sitemap": {
-    "siteUrl" : "http://www.samplesite.com",
-    "changeFreq" : "yearly"
   }
 }
