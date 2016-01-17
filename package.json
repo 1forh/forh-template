@@ -37,13 +37,13 @@
     "gulp-sitemap": "^2.2.0",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.1",
+    "gulp-util": "^3.0.7",
     "imagemin": "^4.0.0",
     "mocha": "*",
     "panini": "^1.0.0",
     "require-dir": "^0.3.0",
     "rimraf": "^2.4.4",
-    "run-sequence": "^1.1.5",
-    "gulp-util": "^3.0.7"
+    "run-sequence": "^1.1.5"
   },
   "private": true
 }
