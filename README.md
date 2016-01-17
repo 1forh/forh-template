@@ -40,10 +40,22 @@ All work is done in the `src/` directory.
 ###Example Structure - src/
 
     assets/
-    layouts/
-    pages/
-    partials/
+        images/
+        scripts/
+        styles/
     data/
+        config.json
+    layouts/
+        default.html
+    pages/
+        404.html
+        index.html
+    partials/
+        parts/
+            form.html
+            sidebar.html
+        header.html
+        footer.html
     favicon.png
     robots.txt
     BingSiteAuth.xml
@@ -60,6 +72,8 @@ All work is done in the `src/` directory.
 `data/` houses all json or yml data
 
  Extra files can be placed outside of the sub folders like the favicon, robots.txt, a Google Webmaster Tools authentication file, etc. 
+
+ Please note: A sitemap is automatically generated with `npm run build:dist`. Change domain name config in `gulp-config.json`
 
 ###Data
 

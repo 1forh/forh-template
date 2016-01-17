@@ -35,7 +35,8 @@
       "src/robots.txt",
       "src/favicon.{png,icon,jpg}",
       "src/*.html",
-      "src/*.xml"
+      "src/*.xml",
+      "src/.htaccess"
     ]
   },
   "browsersync": {
