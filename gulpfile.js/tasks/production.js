@@ -20,7 +20,6 @@ gulp.task('dist:extras', function() {
 
 gulp.task('dist:sass', ['sass'], function(){
   return gulp.src(config.paths.build + 'assets/styles/main.css')
-      
       .pipe(cssnano())
       .pipe(gulp.dest(config.paths.dist + 'assets/styles/'));
 });
