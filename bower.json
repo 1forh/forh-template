@@ -7,15 +7,7 @@
   ],
   "description": "Static site generator template",
   "main": "gulpfile.js",
-  "moduleType": [],
   "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
   "dependencies": {
     "foundation-sites": "~6.0.3",
     "motion-ui": "~1.1.1"
