@@ -4,8 +4,8 @@
 
 - Foundation 6 --- http://foundation.zurb.com
 - Font Awesome --- https://fortawesome.github.io/Font-Awesome/
-- SCSS
-- Gulp
+- Sass ---http://sass-lang.com/
+- Gulp --- http://gulpjs.com/
 - Panini --- https://github.com/zurb/panini
 
 ## Setup
