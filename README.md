@@ -3,6 +3,7 @@
 ###Static website template --- Powered by Gulp and Panini
 
 - Foundation 6 --- http://foundation.zurb.com
+- Motion UI --- https://github.com/zurb/motion-ui
 - Font Awesome --- https://fortawesome.github.io/Font-Awesome/
 - Sass ---http://sass-lang.com/
 - Gulp --- http://gulpjs.com/
