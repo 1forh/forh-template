@@ -1,6 +1,6 @@
 #Forh Template
 
-###Static Website Generator
+###Static website template --- Powered by Gulp and Panini
 
 - SCSS
 - NPM 
