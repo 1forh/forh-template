@@ -2,20 +2,15 @@
 
 ###Static website template --- Powered by Gulp and Panini
 
+- Foundation 6 --- http://foundation.zurb.com
+- Font Awesome --- https://fortawesome.github.io/Font-Awesome/
 - SCSS
-- NPM 
-- Bower
 - Gulp
-
-Made with Foundation 6 --- http://foundation.zurb.com
-
-Icon font --- https://fortawesome.github.io/Font-Awesome/
-
-Panini Documentation: https://github.com/zurb/panini
+- Panini --- https://github.com/zurb/panini
 
 ## Setup
 
-Navigate to directory and download repo:
+Navigate to directory and clone repo:
 
     cd path/to/directory
     git clone https://github.com/1forh/forh-template
