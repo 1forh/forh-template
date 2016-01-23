@@ -9,7 +9,7 @@
 - Gulp --- http://gulpjs.com/
 - Panini --- https://github.com/zurb/panini
 
-Named branches are example templates
+Named branches are example templates.
 
 - Star Wars --- www.projects.zacharyminner.com/forh-template
 - Space --- www.projects.zacharyminner.com/forh-template-2
