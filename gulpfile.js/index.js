@@ -4,4 +4,8 @@
 // Explore `tasks` for more...
 
 var requireDir = require('require-dir');
+
+requireDir('./tasks/dev');
+requireDir('./tasks/prod');
+requireDir('./tasks/deploy');
 requireDir('./tasks');
