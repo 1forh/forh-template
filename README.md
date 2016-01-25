@@ -48,7 +48,9 @@ All work is done in the `src/` directory.
         scripts/
         styles/
     data/
-        config.json
+        example.json
+    helpers/
+        example.js
     layouts/
         default.html
     pages/
@@ -74,6 +76,8 @@ All work is done in the `src/` directory.
 `partials/` houses all components parts
 
 `data/` houses all json or yml data
+
+`helpers/` houses all custom Handlebar helpers
 
  Extra files can be placed outside of the sub folders like the favicon, robots.txt, a Google Webmaster Tools authentication file, etc. 
 

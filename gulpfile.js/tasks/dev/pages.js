@@ -10,7 +10,8 @@ gulp.task('pages', function() {
         root: config.paths.src + 'pages/',
         layouts: config.paths.src + 'layouts/',
         partials: config.paths.src + 'partials/',
-        data: config.paths.src + 'data/'
+        data: config.paths.src + 'data/',
+        helpers: config.paths.src + 'helpers/'
     }))
     .pipe(gulp.dest(config.paths.build) );
 });
