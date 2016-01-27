@@ -35,7 +35,7 @@ Install project dependencies:
 
 `npm run deploy` can be run after `npm run build:dist` to deploy to a server using FTP. Also runs the `gulp psi` task which console.log's Page Speed Insights scores for mobile and desktop versions of website.
 
-All Gulp task configuration is done in `gulp-config.json`
+All Gulp task configuration is done in `gulp/config.js`
 
 ##Source Directory - src/
 
@@ -67,7 +67,7 @@ All work is done in the `src/` directory.
     BingSiteAuth.xml
     google124512.html
 
-`assets/` houses sass, javascript, and images.
+`assets/` houses sass, javascript, and images
 
 `layouts/` houses the default layouts of the theme
 
