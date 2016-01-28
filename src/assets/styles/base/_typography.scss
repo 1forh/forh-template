@@ -21,3 +21,12 @@ h4,
 h5{
   @include font-stack-header;
 }
+
+a{
+  color:$accent-color;
+  @include transition;
+
+  &:hover{
+    color:darken($accent-color, 10%);
+  }
+}
