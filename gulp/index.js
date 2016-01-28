@@ -6,7 +6,7 @@ module.exports = function(gulp, config){
   // Utility tasks
   require('./tasks/build')(gulp, config);
   require('./tasks/clean')(gulp, config);
-  // require('./tasks/serve')(gulp, config);
+  require('./tasks/serve')(gulp, config);
 
   // Development tasks
   require('./tasks/dev/extras')(gulp, config);
