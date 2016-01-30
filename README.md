@@ -13,6 +13,7 @@ Named branches are example templates.
 
 - Star Wars --- www.projects.zacharyminner.com/forh-template
 - Space --- www.projects.zacharyminner.com/forh-template-2
+- Whales --- www.projects.zacharyminner.com/forh-template-3
 
 ## Setup
 
