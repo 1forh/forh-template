@@ -5,15 +5,17 @@ var sequence = require('run-sequence');
 
 module.exports = function(gulp, config) {
 
+  var clean_folder = function(name, path) {
+    gulp.task(name, function(error) {
+      rimraf(path, error);
+    });
+  };
+
   // Delete the "build" folder
-  gulp.task('clean:build', function(error) {
-    rimraf(config.paths.build, error);
-  });
+  clean_folder('clean:build', config.paths.build);
 
   // Delete the "dist" folder
-  gulp.task('clean:dist', function(error) {
-    rimraf(config.paths.dist, error);
-  });
+  clean_folder('clean:dist', config.paths.dist);
 
   // Delete both "build" and "dist" folders
   gulp.task('clean', function(done){

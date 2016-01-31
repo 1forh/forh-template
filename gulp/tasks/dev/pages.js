@@ -19,6 +19,6 @@ module.exports = function(gulp, config) {
 
   gulp.task('pages:reset', ['pages'], function() {
     panini.refresh();
-    console.log('pages have been reset');
+    console.log('Pages have been reset.');
   });
 };
