@@ -134,10 +134,3 @@ Running the `npm run build:dist` command adds production ready static files to t
 - Autoprefixer
 - Image optimization with Imagemin
 
-##Test Directory - test/
-
-Running the `npm test` command runs all tests from the `test/` directory. Uses Mocha and Chai for tests
-
-###Tests
-
-TBD
