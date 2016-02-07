@@ -1,10 +1,9 @@
 +'use strict';
 
-// Add Foundation 6 JavaScript to the doc
-$(document).foundation();
+// Call Foundation 6 js
+// $(document).foundation();
 
 // Add custom scripts here
 (function($){
-
 
 })(jQuery);

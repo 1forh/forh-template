@@ -1,12 +1,11 @@
 /* Import Foundation 6 */
-@import 'foundation';
-@import 'motion-ui';
+@import 
+  'foundation',
+  'motion-ui';
 
 /* 
-
   Include all of Foundation 6
   @include foundation-everything;
-
  */
  
 @include foundation-global-styles;
@@ -14,45 +13,58 @@
 @include foundation-typography;
 @include foundation-button;
 @include foundation-forms;
-@include foundation-visibility-classes;
-@include foundation-float-classes;
-@include foundation-accordion;
-@include foundation-accordion-menu;
-@include foundation-badge;
-@include foundation-breadcrumbs;
-@include foundation-button-group;
-@include foundation-callout;
-@include foundation-close-button;
-@include foundation-drilldown-menu;
-@include foundation-dropdown;
-@include foundation-dropdown-menu;
-@include foundation-flex-video;
-@include foundation-label;
-@include foundation-media-object;
-@include foundation-menu;
-@include foundation-off-canvas;
-@include foundation-orbit;
-@include foundation-pagination;
-@include foundation-progress-bar;
-@include foundation-slider;
-@include foundation-sticky;
-@include foundation-reveal;
-@include foundation-switch;
-@include foundation-table;
-@include foundation-tabs;
-@include foundation-thumbnail;
-@include foundation-title-bar;
-@include foundation-tooltip;
-@include foundation-top-bar;
+// @include foundation-visibility-classes;
+// @include foundation-float-classes;
+// @include foundation-accordion;
+// @include foundation-accordion-menu;
+// @include foundation-badge;
+// @include foundation-breadcrumbs;
+// @include foundation-button-group;
+// @include foundation-callout;
+// @include foundation-close-button;
+// @include foundation-drilldown-menu;
+// @include foundation-dropdown;
+// @include foundation-dropdown-menu;
+// @include foundation-flex-video;
+// @include foundation-label;
+// @include foundation-media-object;
+// @include foundation-menu;
+// @include foundation-off-canvas;
+// @include foundation-orbit;
+// @include foundation-pagination;
+// @include foundation-progress-bar;
+// @include foundation-slider;
+// @include foundation-sticky;
+// @include foundation-reveal;
+// @include foundation-switch;
+// @include foundation-table;
+// @include foundation-tabs;
+// @include foundation-thumbnail;
+// @include foundation-title-bar;
+// @include foundation-tooltip;
+// @include foundation-top-bar;
 
-@include motion-ui-transitions;
-@include motion-ui-animations;
+// @include motion-ui-transitions;
+// @include motion-ui-animations;
 
 
 /* Import Custom styles */
-@import "fonts";
-@import "helpers/index";
-@import "base/index";
-@import "layouts/index";
-@import "parts/index";
-@import "pages/index";
+@import 
+  "utility/variables",
+  "utility/functions",
+  "utility/mixins";
+
+@import
+  "base/fonts",
+  "base/typography",
+  "base/helpers";
+
+@import
+  "layouts/footer",
+  "layouts/header";
+
+@import 
+  "parts/sidebar";
+
+@import
+  "pages/home";
