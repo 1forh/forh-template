@@ -10,6 +10,6 @@
   "license": "MIT",
   "dependencies": {
     "foundation-sites": "~6.0.3",
-    "motion-ui": "~1.1.1"
+    "motion-ui": "~1.2.0"
   }
 }

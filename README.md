@@ -1,6 +1,6 @@
 #Forh Template
 
-###Static website template --- Powered by Gulp and Panini
+###"Static" website boilerplate --- Powered by Gulp and Panini
 
 - Foundation 6 --- http://foundation.zurb.com
 - Motion UI --- https://github.com/zurb/motion-ui
