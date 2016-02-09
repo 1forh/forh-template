@@ -25,7 +25,8 @@ module.exports = {
   styles: {
     paths: [
       'bower_components/motion-ui/src',
-      'bower_components/foundation-sites/scss'
+      'bower_components/foundation-sites/scss',
+      'bower_components/slick-carousel/slick'
     ],
     version: [
       'last 2 versions',
@@ -45,6 +46,7 @@ module.exports = {
       // 'bower_components/foundation-sites/js/foundation.util.*.js',
       // 'bower_components/foundation-sites/js/foundation.*.js',
       // 'bower_components/motion-ui/dist/motion-ui.js',
+      // 'bower_components/slick-carousel/slick/slick.js',
       src + '/assets/scripts/**/*.js',
       src + '/assets/scripts/main.js'
     ]

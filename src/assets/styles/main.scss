@@ -1,7 +1,10 @@
 /* Import Foundation 6 */
-@import 
-  'foundation',
-  'motion-ui';
+@import 'foundation';
+@import 'motion-ui';
+
+/* Import Slick slider styles */
+// @import 'slick.scss';
+// @import 'slick-theme.scss';
 
 /* 
   Include all of Foundation 6
@@ -55,6 +58,7 @@
   "utility/mixins";
 
 @import
+  "base/base",
   "base/fonts",
   "base/typography",
   "base/helpers";
@@ -64,6 +68,7 @@
   "layouts/header";
 
 @import 
+  "parts/slider",
   "parts/sidebar";
 
 @import

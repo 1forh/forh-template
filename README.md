@@ -4,9 +4,10 @@
 
 - Foundation 6 --- http://foundation.zurb.com
 - Motion UI --- https://github.com/zurb/motion-ui
-- Font Awesome --- https://fortawesome.github.io/Font-Awesome/
-- Sass ---http://sass-lang.com/
-- Gulp --- http://gulpjs.com/
+- Slick --- http://kenwheeler.github.io/slick
+- Font Awesome --- https://fortawesome.github.io/Font-Awesome
+- Sass ---http://sass-lang.com
+- Gulp --- http://gulpjs.com
 - Panini --- https://github.com/zurb/panini
 
 Named branches are example templates.
