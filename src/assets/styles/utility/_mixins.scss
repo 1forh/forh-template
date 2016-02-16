@@ -5,6 +5,12 @@
   transition: all .4s ease;
 }
 
+/* Full width background image */
+@mixin image-bg($img) {
+  background: url($img) no-repeat center center;
+  background-size: cover;
+}
+
 /* Typography mixins */
 @mixin font-stack-header{
   
