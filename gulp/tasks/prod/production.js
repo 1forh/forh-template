@@ -5,7 +5,6 @@ var browser = require( 'browser-sync' );
 var cssnano = require('gulp-cssnano');
 var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
-var critical = require('critical').stream;
 
 module.exports = function(gulp, config) {
   
