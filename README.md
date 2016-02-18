@@ -28,6 +28,10 @@ Install project dependencies:
 
 This command runs a shell script and installs NPM and Bower dependencies.
 
+##Configuration
+
+All Gulp task configuration is done in `gulp/config.js`
+
 ## Useful Commands
 
 `npm start` serves `build/` at: `http://localhost:4000`. 
@@ -37,10 +41,6 @@ This command runs a shell script and installs NPM and Bower dependencies.
 `npm run serve:dist` does a production build and then starts a server that is viewable at: `http://localhost:4000`
 
 `npm run deploy` can be run after `npm run build:dist` to deploy to a server using FTP. Also runs the `gulp psi` task which console.log's Page Speed Insights scores for mobile and desktop versions of website.
-
-##Configuration
-
-All Gulp task configuration is done in `gulp/config.js`
 
 ##Source Directory - src/
 
