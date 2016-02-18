@@ -134,7 +134,6 @@ Running the `npm run build:dist` command adds production ready static files to t
 
 ###Optimizations
 
-- Inline above-the-fold styles with Critical
 - Minified styles
 - Uglify scripts
 - Autoprefixer
