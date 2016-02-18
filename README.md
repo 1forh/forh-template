@@ -38,7 +38,7 @@ This command runs a shell script and installs NPM and Bower dependencies.
 
 `npm run deploy` can be run after `npm run build:dist` to deploy to a server using FTP. Also runs the `gulp psi` task which console.log's Page Speed Insights scores for mobile and desktop versions of website.
 
-#Configuration
+##Configuration
 
 All Gulp task configuration is done in `gulp/config.js`
 
