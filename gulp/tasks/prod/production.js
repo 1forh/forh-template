@@ -25,18 +25,6 @@ module.exports = function(gulp, config) {
         .pipe(gulp.dest(config.paths.dist + 'assets/styles/'));
   });
 
-  // Generate & Inline Critical-path CSS
-  gulp.task('dist:critical-sass', ['dist:sass'], function () {
-      return gulp.src(config.paths.dist + '*.html')
-          .pipe(critical({
-            base: config.paths.dist, 
-            inline: config.styles.critical.inline, 
-            width: config.styles.critical.width,
-            height: config.styles.critical.height
-          }))
-          .pipe(gulp.dest(config.paths.dist));
-  });
-
   gulp.task('dist:javascript', ['javascript'], function(){
     return gulp.src(config.paths.build + 'assets/scripts/*.js')
       .pipe(uglify())
