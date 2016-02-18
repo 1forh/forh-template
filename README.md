@@ -28,6 +28,8 @@ Install project dependencies:
 
 This command runs a shell script and installs NPM and Bower dependencies.
 
+## Useful Commands
+
 `npm start` serves `build/` at: `http://localhost:4000`. 
 
 `npm run build:dist` does a production build
