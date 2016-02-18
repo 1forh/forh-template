@@ -24,8 +24,9 @@ Navigate to directory and clone repo:
 
 Install project dependencies:
 
-    npm install
-    bower install
+    npm run setup
+
+This command runs a shell script and installs NPM and Bower dependencies.
 
 `npm start` serves `build/` at: `http://localhost:4000`. 
 

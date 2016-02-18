@@ -12,7 +12,7 @@ module.exports = function(gulp, config) {
     });
     gulp.watch([config.paths.src + 'pages/**/*.html'], ['pages', browser.reload]);
     gulp.watch([config.paths.src + '{pages,layouts,partials}/**/*.html'], ['pages:reset', browser.reload]);
-    gulp.watch([config.paths.src + 'assets/styles/**/*.scss'], ['sass', browser.reload]);
+    gulp.watch([config.paths.src + 'assets/styles/**/*.scss'], ['sass' ]);
     gulp.watch([config.paths.src + 'assets/scripts/**/*.js'], ['javascript', browser.reload]);
     gulp.watch([config.paths.src + 'assets/images/**/*'], ['images', browser.reload]);
   });

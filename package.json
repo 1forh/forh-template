@@ -4,8 +4,8 @@
   "description": "Static website generator",
   "main": "gulpfile.js",
   "scripts": {
+    "setup": "bash install.sh",
     "start": "gulp serve",
-    "test": "mocha test/",
     "serve:dist": "gulp serve:dist",
     "build:dist": "gulp build:dist",
     "deploy": "gulp deploy"

@@ -1,6 +1,7 @@
 'use strict';
 
 var plumber = require('gulp-plumber');
+var browserSync = require('browser-sync');
 var changed = require('gulp-changed');
 var sourcemaps = require('gulp-sourcemaps');
 var sass = require('gulp-sass');
@@ -21,6 +22,7 @@ module.exports = function(gulp, config) {
         browsers: config.styles.version
       }))
       .pipe(sourcemaps.write())
-      .pipe(gulp.dest(config.paths.build + 'assets/styles'));
+      .pipe(gulp.dest(config.paths.build + 'assets/styles'))
+      .pipe(browserSync.stream());
   });
 };
