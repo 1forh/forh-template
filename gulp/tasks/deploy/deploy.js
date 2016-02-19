@@ -7,18 +7,30 @@ var sequence = require('run-sequence');
 module.exports = function(gulp, config) {
   
   gulp.task( 'ftp', function () {
-    var conn = ftp.create({
-      host: config.site.host,
-      user: config.site.user,
-      password: config.site.password,
-      parallel: 10,
-      log: gutil.log
-    });
-    return gulp.src( 'dist/**', { base: config.paths.dist, buffer: false })
-      .pipe( conn.newer( config.site.uploadPath ))
-      .pipe( conn.dest( config.site.uploadPath ));
-  });
 
+    // Makes sure you changed the site domain http://www.samplesite.com
+    if(!config.url == 'http://www.samplesite.com') {
+
+      var conn = ftp.create({
+        host: config.site.host,
+        user: config.site.user,
+        password: config.site.password,
+        parallel: 10,
+        log: gutil.log
+      });
+
+      return gulp.src( 'dist/**', { base: config.paths.dist, buffer: false })
+        .pipe( conn.newer( config.site.uploadPath ))
+        .pipe( conn.dest( config.site.uploadPath ));
+
+    }
+    else {
+
+      console.log('You didn\'t set the domain name.');
+    
+    }
+
+  });
 
   gulp.task('deploy', function(done){
     sequence('ftp', done);
