@@ -21,6 +21,6 @@ module.exports = function(gulp, config) {
 
 
   gulp.task('deploy', function(done){
-    sequence('ftp', ['psi'], done);
+    sequence('ftp', done);
   });
 };

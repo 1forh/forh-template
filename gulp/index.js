@@ -21,7 +21,6 @@ module.exports = function(gulp, config){
 
   // Deployment tasks
   require('./tasks/deploy/deploy')(gulp, config);
-  require('./tasks/deploy/psi')(gulp, config);
 
   return gulp;
 };
