@@ -24,9 +24,7 @@ module.exports = {
   },
   styles: {
     paths: [
-      'bower_components/motion-ui/src',
       'bower_components/foundation-sites/scss',
-      'bower_components/slick-carousel/slick'
     ],
     version: [
       'last 2 versions',
