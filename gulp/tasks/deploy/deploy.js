@@ -8,9 +8,6 @@ module.exports = function(gulp, config) {
   
   gulp.task( 'ftp', function () {
 
-    // Makes sure you changed the site domain http://www.samplesite.com
-    if(!config.url == 'http://www.samplesite.com') {
-
       var conn = ftp.create({
         host: config.site.host,
         user: config.site.user,
@@ -22,14 +19,6 @@ module.exports = function(gulp, config) {
       return gulp.src( 'dist/**', { base: config.paths.dist, buffer: false })
         .pipe( conn.newer( config.site.uploadPath ))
         .pipe( conn.dest( config.site.uploadPath ));
-
-    }
-    else {
-
-      console.log('You didn\'t set the domain name.');
-    
-    }
-
   });
 
   gulp.task('deploy', function(done){
