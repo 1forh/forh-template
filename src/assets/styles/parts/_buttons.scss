@@ -5,4 +5,9 @@
   &:hover {
     background-color: darken($accent-color, 15%);
   }
+
+  &:focus,
+  &:active {
+      background-color: darken($accent-color, 15%);
+  }
 }
