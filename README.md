@@ -3,8 +3,6 @@
 ###"Static" website boilerplate --- Powered by Gulp and Panini
 
 - Foundation 6 --- http://foundation.zurb.com
-- Motion UI --- https://github.com/zurb/motion-ui
-- Slick --- http://kenwheeler.github.io/slick
 - Font Awesome --- https://fortawesome.github.io/Font-Awesome
 - Sass ---http://sass-lang.com
 - Gulp --- http://gulpjs.com
