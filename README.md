@@ -18,7 +18,7 @@ Named branches are example templates.
 Navigate to directory and clone repo:
 
     cd path/to/directory
-    git clone https://github.com/1forh/forh-template
+    git clone https://github.com/1forh/forh-template .
 
 Install project dependencies:
 
@@ -32,13 +32,13 @@ All Gulp task configuration is done in `gulp/config.js`
 
 ## Useful Commands
 
-`npm start` serves `build/` at: `http://localhost:4000`. 
+`npm start` serves `build/` directory at: `http://localhost:4000`. 
 
-`npm run build:dist` does a production build
+`npm run build:dist` runs a production build and places optimized files into the  `dist/` directory
 
-`npm run serve:dist` does a production build and then starts a server that is viewable at: `http://localhost:4000`
+`npm run serve:dist` runs a production build and then serves the `dist/` directory viewable at: `http://localhost:4000`
 
-`npm run deploy` can be run after `npm run build:dist` to deploy to a server using FTP. Also runs the `gulp psi` task which console.log's Page Speed Insights scores for mobile and desktop versions of website.
+`npm run deploy` can be run after `npm run build:dist` to deploy to a server using FTP.
 
 ##Source Directory - src/
 
