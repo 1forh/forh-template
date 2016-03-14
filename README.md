@@ -24,7 +24,7 @@ Install project dependencies:
 
     npm run setup
 
-This command runs a shell script and installs NPM and Bower dependencies.
+This command runs a shell script that installs NPM and Bower dependencies.
 
 ##Configuration
 
