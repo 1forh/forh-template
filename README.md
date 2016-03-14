@@ -60,11 +60,9 @@ All work is done in the `src/` directory.
         404.html
         index.html
     partials/
-        parts/
-            form.html
-            sidebar.html
         header.html
         footer.html
+        sidebar.html
     favicon.png
     robots.txt
     BingSiteAuth.xml
