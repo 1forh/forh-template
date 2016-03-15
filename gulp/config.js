@@ -48,7 +48,7 @@ module.exports = {
       src + '/robots.txt',
       src + '/*html',
       src + '*.xml',
-      src + '*.php',
+      build + '*.php',
       src + '/.htaccess'
     ]
   }
