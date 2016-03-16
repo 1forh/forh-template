@@ -54,15 +54,16 @@ All work is done in the `src/` directory.
         example.json
     helpers/
         example.js
-    layouts/
-        default.html
-    pages/
-        404.html
-        index.html
-    partials/
-        header.html
-        footer.html
-        sidebar.html
+    static/
+        layouts/
+            default.html
+        pages/
+            404.html
+            index.html
+        partials/
+            header.html
+            footer.html
+            sidebar.html
     favicon.png
     robots.txt
     BingSiteAuth.xml
