@@ -2,6 +2,12 @@
 
 var url = 'http://www.samplesite.com';
 
+var ftp = {
+  address: 'hosting.com',
+  user: 'username',
+  password: 'password'
+}
+
 var src = './src/';
 var build = "./build/";
 var dist = "./dist/";
@@ -9,9 +15,9 @@ var dist = "./dist/";
 module.exports = {
   site: {
     url: url,
-    host: 'hosting.com',
-    user: 'username',
-    password: 'password',
+    host: ftp.address,
+    user: ftp.user,
+    password: ftp.password,
     uploadPath: '/public_html'
   },
   paths: {
