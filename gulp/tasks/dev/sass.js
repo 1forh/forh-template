@@ -13,7 +13,7 @@ module.exports = function(gulp, config) {
   gulp.task('sass', function() {
     return gulp.src(config.paths.src + 'assets/styles/main.scss')
       .pipe(plumber())
-      .pipe(changed(config.paths.build + 'assets/styles/main.css'))
+      .pipe(changed(config.paths.build))
       .pipe(sourcemaps.init())
       .pipe(sass({
         includePaths: config.styles.paths
