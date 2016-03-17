@@ -136,3 +136,7 @@ Running the `npm run build:dist` command adds production ready static files to t
 - Autoprefixer
 - Image optimization with Imagemin
 
+##Tips
+
+[Move active class on menu item with Panini helper #ifpage](https://gist.github.com/1forh/06bbf4b7c90465fc5ad5)
+
