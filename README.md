@@ -13,7 +13,7 @@ Named branches are example templates.
 - Star Wars --- www.projects.zacharyminner.com/forh-template
 - Space --- www.projects.zacharyminner.com/forh-template-2
 
-## Setup
+##Setup
 
 Navigate to directory and clone repo:
 
@@ -30,7 +30,7 @@ This command runs a shell script that installs NPM and Bower dependencies.
 
 All Gulp task configuration is done in `gulp/config.js`
 
-## Useful Commands
+##Useful Commands
 
 `npm start` serves `build/` directory at: `http://localhost:4000`. 
 
