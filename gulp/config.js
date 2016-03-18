@@ -6,7 +6,7 @@ var ftp = {
   address: 'hosting.com',
   user: 'username',
   password: 'password'
-}
+};
 
 var src = './src/';
 var build = "./build/";
