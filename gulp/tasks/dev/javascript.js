@@ -1,7 +1,6 @@
 'use strict';
 
 var concat = require('gulp-concat');
-var babel = require('gulp-babel');
 
 module.exports = function(gulp, config) {
   
@@ -9,9 +8,6 @@ module.exports = function(gulp, config) {
   gulp.task('javascript', function() {
 
     return gulp.src(config.scripts.paths)
-      .pipe(babel({
-        presets: [ 'es2015' ]
-      }))
       .pipe(concat('main.js'))
       .pipe(gulp.dest(config.paths.build + 'assets/scripts')) ;
   });
