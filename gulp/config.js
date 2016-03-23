@@ -50,11 +50,12 @@ module.exports = {
   },
   extras: {
     paths: [
-      src + '/favicon.{png,ico,jpg}',
-      src + '/robots.txt',
-      src + '/*html',
+      src + 'favicon.{png,ico,jpg}',
+      src + 'robots.txt',
+      src + '*html',
       src + '*.xml',
-      src + '/.htaccess'
+      src + '.htaccess',
+      src + '*.php'
     ]
   }
 };
