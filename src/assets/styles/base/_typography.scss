@@ -1,7 +1,11 @@
 /* Typography styles */
 
 body{
+  font-size: 17px;
   @include font-stack-body;
+  @include breakpoint(medium down) {
+    font-size: 15px;
+  }
 }
 
 h1,
