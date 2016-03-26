@@ -31,6 +31,7 @@ module.exports = {
   styles: {
     paths: [
       'bower_components/foundation-sites/scss',
+      'bower_components/modular-scale/stylesheets'
     ],
     version: [
       'last 2 versions',
