@@ -15,6 +15,11 @@ module.exports = function(gulp, config) {
       .pipe(gulp.dest(config.paths.dist));
   });
 
+  gulp.task('dist:fonts', function() {
+    return gulp.src(config.fonts.paths)
+      .pipe(gulp.dest(config.paths.dist + 'assets/fonts'));
+  });
+
   gulp.task('dist:extras', function() {
     return gulp.src(config.extras.paths)
       .pipe(gulp.dest(config.paths.dist));

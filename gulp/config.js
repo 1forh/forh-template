@@ -28,10 +28,15 @@ module.exports = {
   browsersync: {
     port: 4000
   },
+  fonts: {
+    paths: [
+      'bower_components/components-font-awesome/fonts/**.*'
+    ]
+  },
   styles: {
     paths: [
-      'bower_components/foundation-sites/scss',
-      'bower_components/modular-scale/stylesheets'
+      'bower_components/components-font-awesome/scss',
+      'bower_components/foundation-sites/scss'
     ],
     version: [
       'last 2 versions',

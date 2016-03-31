@@ -9,6 +9,7 @@ module.exports = function(gulp, config){
   require('./tasks/serve')(gulp, config);
 
   // Development tasks
+  require('./tasks/dev/fonts')(gulp, config);
   require('./tasks/dev/extras')(gulp, config);
   require('./tasks/dev/images')(gulp, config);
   require('./tasks/dev/javascript')(gulp, config);
