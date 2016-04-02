@@ -41,7 +41,13 @@ module.exports = {
     version: [
       'last 2 versions',
       'ie >= 9'
-    ]
+    ],
+    critical: {   
+      minify: true,
+      inline: true,
+      width: 1200,    
+      height: 900   
+    }
   },
   scripts: {
     paths: [

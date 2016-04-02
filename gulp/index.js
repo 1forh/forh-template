@@ -19,6 +19,7 @@ module.exports = function(gulp, config){
   // Production tasks
   require('./tasks/prod/production')(gulp, config);
   require('./tasks/prod/sitemap')(gulp, config);
+  require('./tasks/prod/critical')(gulp, config);
 
   // Deployment tasks
   require('./tasks/deploy/deploy')(gulp, config);
