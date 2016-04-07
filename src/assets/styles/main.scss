@@ -8,10 +8,11 @@
 @include foundation-everything($flex: true);
 
 /* Import Custom styles */
-@import 
+@import
   "utility/variables",
   "utility/functions",
-  "utility/mixins";
+  "utility/mixins",
+  "utility/hacks";
 
 @import
   "base/base",
@@ -23,7 +24,7 @@
   "layouts/header",
   "layouts/footer";
 
-@import 
+@import
   "parts/form",
   "parts/slider",
   "parts/sidebar",
