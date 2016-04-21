@@ -13,11 +13,11 @@
 
 /* Typography mixins */
 @mixin font-stack-header{
-  
+
 }
 
 @mixin font-stack-body{
- 
+
 }
 
 /* Google's Material Design mixin for box-shadow*/
@@ -93,7 +93,7 @@
   background-image: linear-gradient(to right, $startColor, $endColor);
 }
 
-/* 
+/*
   Create long shadows -- http://codepen.io/danieltott/pen/AjKay
   Uses makelongshadow function in utility/functions.scss
 */
