@@ -15,7 +15,12 @@ Named branches are example templates.
 
 ##Setup
 
-Navigate to directory and clone repo:
+You will need a few things before setting up your project.
+
+1. Node.js - https://nodejs.org/en
+2. Bower - http://bower.io
+
+After installing Node.js and Bower, navigate to your local project directory and clone the repository:
 
     cd path/to/directory
     git clone https://github.com/1forh/forh-template .
