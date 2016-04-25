@@ -42,11 +42,11 @@ module.exports = {
       'last 2 versions',
       'ie >= 9'
     ],
-    critical: {   
+    critical: {
       minify: true,
       inline: true,
-      width: 1200,    
-      height: 900   
+      width: 1200,
+      height: 900
     }
   },
   scripts: {
@@ -54,8 +54,8 @@ module.exports = {
       'bower_components/jquery/dist/jquery.js',
       'bower_components/what-input/what-input.js',
       'bower_components/foundation-sites/dist/foundation.min.js',
-      src + '/assets/scripts/**/*.js',
-      src + '/assets/scripts/main.js'
+      src + 'assets/scripts/**/*.js',
+      src + 'assets/scripts/main.js'
     ]
   },
   extras: {
