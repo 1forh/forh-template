@@ -3,14 +3,14 @@
 //      https://github.com/saadeghi/browser-hack-sass-mixins
 // ------------------------------------------------------------------------------ //
   How to use:
-  @include [Mixin_Name]{ selector, (property: value) }
+  @include [Mixin_Name]( selector, (property: value) )
   Example:
-  @include only_ie9{ .my_element, (color: red)}
-  @include only_ff28_above{ .my_element, (
+  @include only_ie9( .my_element, (color: red) )
+  @include only_ff28_above( .my_element, (
     background-color: green,
     display: flex,
     margin: 2em,
-  )}
+  ))
 // ----------------------------------- //
   List of Mixins:
   only_edge
