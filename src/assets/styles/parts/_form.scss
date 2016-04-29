@@ -1,1 +1,12 @@
 /* Form element styles */
+#form-messages {
+  margin-bottom: 1em;
+}
+
+#form-messages.success {
+  color: red;
+}
+
+#form-messages.error {
+  color: green;
+}

@@ -1,17 +1,22 @@
 {{!-- Form layout --}}
+<p><strong>All fields are required.</strong></p>
+<div id="form-messages"></div>
 
-<form action="thank-you.php" method="POST" class="contact-form">
+<form action="mailer.php" method="POST" id="ajax-contact" class="contact-form">
   <label for="name">
     Full Name
     <input type="text" name="name" id="name" required>
   </label>
+
   <label for="email">
     Email Address
     <input type="email" name="email" id="email" required>
   </label>
+
   <label for="message">
     Message
     <textarea name="message" id="message"></textarea>
   </label>
+
   <input type="submit" value="Submit" name="submit" id="submit" class="button">
 </form>

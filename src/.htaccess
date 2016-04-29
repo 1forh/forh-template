@@ -1,0 +1,21 @@
+#RewriteEngine On
+
+# Redirect http://www.example.com to http://example.com
+#RewriteCond %{HTTP_HOST} ^www\.example\.com$
+#RewriteRule ^/?$ "http\:\/\/example\.com\/" [R=301,L]
+
+# Set the expiration of the content cache to one week (in seconds)
+Header set Cache-Control "max-age=604800, public, must-revalidate"
+
+# Enable GZIP
+# Check for GZIP at http://checkgzipcompression.com
+<IfModule deflate_module>
+  <IfModule filter_module>
+    AddOutputFilterByType DEFLATE text/plain text/html
+    AddOutputFilterByType DEFLATE text/xml application/xml application/xhtml+xml application/xml-dtd
+    AddOutputFilterByType DEFLATE application/rdf+xml application/rss+xml application/atom+xml image/svg+xml
+    AddOutputFilterByType DEFLATE text/css text/javascript application/javascript application/x-javascript
+    AddOutputFilterByType DEFLATE font/otf font/opentype application/font-otf application/x-font-otf
+    AddOutputFilterByType DEFLATE font/ttf font/truetype application/font-ttf application/x-font-ttf
+  </IfModule>
+</IfModule>

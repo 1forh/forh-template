@@ -54,7 +54,7 @@ module.exports = {
       'bower_components/jquery/dist/jquery.js',
       'bower_components/what-input/what-input.js',
       'bower_components/foundation-sites/dist/foundation.min.js',
-      src + 'assets/scripts/**/*.js',
+      src + 'assets/scripts/mailer.js',
       src + 'assets/scripts/main.js'
     ]
   },
