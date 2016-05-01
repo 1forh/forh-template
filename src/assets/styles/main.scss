@@ -2,10 +2,14 @@
 @import 'font-awesome';
 
 /* Import Foundation 6 */
-@import 'foundation';
+@import "foundation";
 
 // Include all of Foundation 6 with Flexbox grid system
 @include foundation-everything($flex: true);
+
+// Animate.css
+// https://github.com/daneden/animate.css
+@import "animate/animate";
 
 /* Import Custom styles */
 @import

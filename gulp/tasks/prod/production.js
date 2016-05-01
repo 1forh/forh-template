@@ -9,7 +9,7 @@ var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
 
 module.exports = function(gulp, config) {
-  
+
   gulp.task('dist:pages', function(done) {
     return gulp.src(config.paths.build + '*.html')
       .pipe(gulp.dest(config.paths.dist));
@@ -27,9 +27,9 @@ module.exports = function(gulp, config) {
 
   gulp.task('dist:sass', ['sass'], function(){
     return gulp.src(config.paths.build + 'assets/styles/main.css')
-        .pipe(purify([config.paths.build + 'assets/scripts/**/*.js', config.paths.build + '**/*.html']))
-        .pipe(cssnano())
-        .pipe(gulp.dest(config.paths.dist + 'assets/styles/'));
+      .pipe(purify([config.paths.build + 'assets/scripts/**/*.js', config.paths.build + '**/*.html']))
+      .pipe(cssnano())
+      .pipe(gulp.dest(config.paths.dist + 'assets/styles/'));
   });
 
   gulp.task('dist:javascript', ['javascript'], function(){
