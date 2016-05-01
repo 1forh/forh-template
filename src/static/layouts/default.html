@@ -7,7 +7,7 @@
 
   <title>Forh Template</title>
   <meta name="description" content="Static website template.">
-  
+
   <link rel="icon" type="image/png" href="favicon.png">
 
   <link rel="stylesheet" href="{{root}}assets/styles/main.css">
@@ -21,7 +21,7 @@
     e=o.createElement(i);r=o.getElementsByTagName(i)[0];
     e.src='https://www.google-analytics.com/analytics.js';
     r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-    
+
     ga('create','UA-XXXXX-X','auto');
     ga('send','pageview');
   </script>
@@ -32,10 +32,12 @@
   <![endif]-->
 
   {{> header}}
-  
+
   {{> body}}
-  
+
   {{> footer}}
+
+  <button id="climb"></button>
 
   <script src="{{root}}assets/scripts/main.js"></script>
 </body>
