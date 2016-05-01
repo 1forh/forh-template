@@ -71,6 +71,7 @@ All work is done in the `src/` directory.
             sidebar.html
     favicon.png
     robots.txt
+    .htaccess
     BingSiteAuth.xml
     google124512.html
 
