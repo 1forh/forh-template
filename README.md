@@ -37,7 +37,7 @@ This command runs a shell script that installs NPM and Bower dependencies.
 
 ##Configuration
 
-All Gulp task configuration is done in `gulp/config.js`
+All Gulp task configuration is done in `config.js`
 
 ##Useful Commands
 
@@ -62,7 +62,8 @@ All work is done in the `src/` directory.
     data/
         example.json
     helpers/
-        example.js
+        description.js
+        title.js
     static/
         layouts/
             default.html
