@@ -94,7 +94,7 @@ All work is done in the `src/` directory.
 
  Extra files can be placed outside of the sub folders like the favicon, robots.txt, a Google Webmaster Tools authentication file, etc. 
 
- Please note: A sitemap is automatically generated with `npm run build:dist`. Change domain name config in `gulp-config.json`
+ Please note: A sitemap is automatically generated with `npm run build:dist`. Change domain name config in `config.js`
 
 ###Data
 
