@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function(gulp, config){
-  config = require('./config');
+  config = require('../config');
 
   // Default task
   require('./tasks/default')(gulp, config);

@@ -1,4 +1,4 @@
-/* 
+/*
   All tasks are located in gulp/tasks/
   Gulp and theme config in gulp/config.js
  */
