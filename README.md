@@ -4,7 +4,7 @@
 
 - Gulp --- http://gulpjs.com
 - Panini --- https://github.com/zurb/panini
-- Sass ---http://sass-lang.com
+- Sass --- http://sass-lang.com
 
 - Foundation 6 --- http://foundation.zurb.com
 - Font Awesome --- https://fortawesome.github.io/Font-Awesome
