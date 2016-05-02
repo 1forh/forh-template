@@ -2,7 +2,7 @@ var format = require('util').format;
 var config = require( "../../gulp/config.js" );
 
 /**
- * Handlebars block helper that displays meta description for current page using data/config.json
+ * Handlebars block helper that displays meta description for current page using gulp/config.js
  * @param {string} page - Current page
  * @example
  * {{#description 'index'}}{{/description}}
