@@ -13,11 +13,11 @@
 
 /* Typography mixins */
 @mixin font-stack-header{
-
+  font-family: 'Open Sans', sans-serif;
 }
 
 @mixin font-stack-body{
-
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* Google's Material Design mixin for box-shadow*/

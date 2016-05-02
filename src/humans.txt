@@ -1,0 +1,19 @@
+/* TEAM */
+
+Name: Haines Local Search
+Location: Canton, United States
+
+Name: Zachary Minner
+Location: Minerva, Ohio, United States
+
+/* THANKS */
+
+Open source contributors who worked on the projects listed below.
+
+/* SITE */
+
+Doctype:HTML5
+Standards: HTML5, CSS3, JavaScript (es2015)
+IDE: Sublime Text
+Components: jQuery, Normalize.css, Foundation-sites, Google Fonts, Font-Awesome, html5shiv, Animate.css, Browser Hack Mixins, Climb.js
+

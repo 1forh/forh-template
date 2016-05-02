@@ -2,11 +2,15 @@
 
 ###"Static" website boilerplate --- Powered by Gulp and Panini
 
-- Foundation 6 --- http://foundation.zurb.com
-- Font Awesome --- https://fortawesome.github.io/Font-Awesome
-- Sass ---http://sass-lang.com
 - Gulp --- http://gulpjs.com
 - Panini --- https://github.com/zurb/panini
+- Sass ---http://sass-lang.com
+
+- Foundation 6 --- http://foundation.zurb.com
+- Font Awesome --- https://fortawesome.github.io/Font-Awesome
+- Animate.css --- http://daneden.me/animate
+- Climb.js --- http://github.com/1forh/climb
+- Browser Hack Mixins --- https://github.com/saadeghi/browser-hack-sass-mixins
 
 Named branches are example templates.
 

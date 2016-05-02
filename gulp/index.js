@@ -3,6 +3,9 @@
 module.exports = function(gulp, config){
   config = require('./config');
 
+  // Default task
+  require('./tasks/default')(gulp, config);
+
   // Utility tasks
   require('./tasks/build')(gulp, config);
   require('./tasks/clean')(gulp, config);

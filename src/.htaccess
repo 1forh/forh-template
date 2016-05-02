@@ -1,8 +1,8 @@
-#RewriteEngine On
+# RewriteEngine On
 
 # Redirect http://www.example.com to http://example.com
-#RewriteCond %{HTTP_HOST} ^www\.example\.com$
-#RewriteRule ^/?$ "http\:\/\/example\.com\/" [R=301,L]
+# RewriteCond %{HTTP_HOST} ^www\.example\.com$
+# RewriteRule ^/?$ "http\:\/\/example\.com\/" [R=301,L]
 
 # Set the expiration of the content cache to one week (in seconds)
 Header set Cache-Control "max-age=604800, public, must-revalidate"

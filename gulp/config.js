@@ -25,6 +25,19 @@ module.exports = {
     build: build,
     dist: dist
   },
+  pages: {
+    index: {
+      "name": "index",
+      "path": url,
+      "title": "Forh Template",
+      "description": "Static website template."
+    },
+    forhohforh: {
+      "name": "404",
+      "path": url + "/404.html",
+      "title": "Forh Template | 404 Error"
+    }
+  },
   browsersync: {
     port: 4000
   },
@@ -63,6 +76,7 @@ module.exports = {
     paths: [
       src + 'favicon.{png,ico,jpg}',
       src + 'robots.txt',
+      src + 'humans.txt',
       src + '*html',
       src + '*.xml',
       src + '.htaccess',
