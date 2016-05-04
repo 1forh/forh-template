@@ -14,18 +14,18 @@
   <!-- Facebook / Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{#head 'url'}}{{page}}{{/head}}">
-  <meta property="og:title" content="Content Title">
+  <meta property="og:title" content="{{#head 'social-title'}}{{page}}{{/head}}">
   <meta property="og:description" content="{{#head 'description'}}{{page}}{{/head}}">
   <meta property="og:locale" content="en_US">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:url" content="{{#head 'url'}}{{page}}{{/head}}">
-  <meta name="twitter:title" content="Content Title">
+  <meta name="twitter:title" content="{{#head 'social-title'}}{{page}}{{/head}}">
   <meta name="twitter:description" content="{{#head 'description'}}{{page}}{{/head}}">
 
   <!-- Google+ / Schema.org-->
-  <meta itemprop="name" content="Content Title">
+  <meta itemprop="name" content="{{#head 'social-title'}}{{page}}{{/head}}">
   <meta itemprop="description" content="{{#head 'description'}}{{page}}{{/head}}">
   {{/unlesspage}}
 

@@ -5,10 +5,10 @@ var ftp = require( 'vinyl-ftp' );
 var sequence = require('run-sequence');
 
 module.exports = function(gulp, config) {
-  
+
   gulp.task( 'ftp', function () {
 
-      var conn = ftp.create({
+      var conn = ftp.create( {
         host: config.site.host,
         user: config.site.user,
         password: config.site.password,

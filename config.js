@@ -31,6 +31,7 @@ module.exports = {
         "name": "index",
         "url": url,
         "title": "Forh Template | Home Page",
+        "social-title": "Forh Template",
         "description": "Static website template."
       }
     },
