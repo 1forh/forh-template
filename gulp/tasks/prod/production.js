@@ -1,7 +1,5 @@
 'use strict';
 
-var sequence = require('run-sequence');
-var browser = require( 'browser-sync' );
 var cssnano = require('gulp-cssnano');
 var purify = require('gulp-purifycss');
 var babel = require('gulp-babel');

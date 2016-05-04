@@ -5,33 +5,29 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-{{#ifpage 'index'}}
-  {{#title 'index'}}{{/title}}
-  {{#description 'index'}}{{/description}}
-{{/ifpage}}
+  <title>{{#title}}{{page}}{{/title}}</title>
+  {{#unlesspage '404'}}
+  <meta name="description" content="{{#description}}{{page}}{{/description}}">
+  {{/unlesspage}}
 
-{{#ifpage '404'}}
-  {{#title 'forhohforh'}}{{/title}}
-{{/ifpage}}
-
-{{#unlesspage '404'}}
+  {{#unlesspage '404'}}
   <!-- Facebook / Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="">
+  <meta property="og:url" content="{{#path}}{{page}}{{/path}}">
   <meta property="og:title" content="Content Title">
-  <meta property="og:description" content="Description Here">
+  <meta property="og:description" content="{{#description}}{{page}}{{/description}}">
   <meta property="og:locale" content="en_US">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:url" content="">
+  <meta name="twitter:url" content="{{#path}}{{page}}{{/path}}">
   <meta name="twitter:title" content="Content Title">
-  <meta name="twitter:description" content="Content description less than 200 characters">
+  <meta name="twitter:description" content="{{#description}}{{page}}{{/description}}">
 
   <!-- Google+ / Schema.org-->
   <meta itemprop="name" content="Content Title">
-  <meta itemprop="description" content="Content description less than 200 characters">
-{{/unlesspage}}
+  <meta itemprop="description" content="{{#description}}{{page}}{{/description}}">
+  {{/unlesspage}}
 
   <link rel="icon" type="image/png" href="favicon.png">
 

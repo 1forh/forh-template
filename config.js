@@ -25,19 +25,23 @@ module.exports = {
     build: build,
     dist: dist
   },
-  pages: {
-    index: {
-      "name": "index",
-      "path": url,
-      "title": "Forh Template",
-      "description": "Static website template."
+  pages: [
+    {
+      index: {
+        "name": "index",
+        "path": url,
+        "title": "Forh Template | Home Page",
+        "description": "Static website template."
+      }
     },
-    forhohforh: {
-      "name": "404",
-      "path": url + "/404.html",
-      "title": "Forh Template | 404 Error"
+    {
+      forhohforh: {
+        "name": "404",
+        "path": url + "/404.html",
+        "title": "Forh Template | 404 Error"
+      }
     }
-  },
+  ],
   browsersync: {
     port: 4000
   },

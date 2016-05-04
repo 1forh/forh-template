@@ -4,13 +4,24 @@
   background: #ccc;
   color: $black;
   padding: 0.4em 0;
-  text-align:center;
-}
-
-.row {
-  max-width:65em;
+  text-align: center;
 }
 
 iframe {
   border: none;
+}
+
+/* Foundation 6 custom styles */
+.row {
+  max-width: 75em;
+}
+
+/* Climb custom styles */
+#climb {
+  @include shadow-1;
+
+  &:focus,
+  &:after {
+    box-shadow: none;
+  }
 }

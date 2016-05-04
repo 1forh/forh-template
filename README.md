@@ -8,7 +8,6 @@
 
 - Foundation 6 --- http://foundation.zurb.com
 - Font Awesome --- https://fortawesome.github.io/Font-Awesome
-- Animate.css --- http://daneden.me/animate
 - Climb.js --- http://github.com/1forh/climb
 - Browser Hack Mixins --- https://github.com/saadeghi/browser-hack-sass-mixins
 
