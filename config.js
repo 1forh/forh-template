@@ -29,7 +29,7 @@ module.exports = {
     {
       index: {
         "name": "index",
-        "path": url,
+        "url": url,
         "title": "Forh Template | Home Page",
         "description": "Static website template."
       }
@@ -37,7 +37,7 @@ module.exports = {
     {
       forhohforh: {
         "name": "404",
-        "path": url + "/404.html",
+        "url": url + "/404.html",
         "title": "Forh Template | 404 Error"
       }
     }
