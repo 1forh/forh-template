@@ -19,7 +19,7 @@ module.exports = function(gulp, config) {
 
     gulp.watch([config.paths.src + 'static/pages/**/*.html'], ['pages', browser.reload]);
     gulp.watch([config.paths.src + 'static/{pages,layouts,partials}/**/*.html'], ['pages:reset', browser.reload]);
-    gulp.watch([config.paths.src + 'assets/styles/**/*.scss'], ['styles' ]);
+    gulp.watch([config.paths.src + 'assets/styles/**/*.scss'], ['styles']);
     gulp.watch([config.paths.src + 'assets/scripts/**/*.js'], ['scripts', browser.reload]);
     gulp.watch([config.paths.src + 'assets/images/**/*'], ['images', browser.reload]);
   });
