@@ -12,13 +12,20 @@ module.exports = function(gulp, config) {
         host: config.site.host,
         user: config.site.user,
         password: config.site.password,
-        parallel: 10,
+        parallel: 5,
+        reload: true,
         log: gutil.log
       });
 
-      return gulp.src( 'dist/**', { base: config.paths.dist, buffer: false })
-        .pipe( conn.newer( config.site.uploadPath ))
-        .pipe( conn.dest( config.site.uploadPath ));
+      // Will not upload .htaccess file without declaring it in the glob
+      var glob = [
+        'dist/**',
+        'dist/.htaccess'
+      ];
+
+      return gulp.src(glob, { base: config.paths.dist, buffer: false })
+        .pipe(conn.newer(config.site.uploadPath))
+        .pipe(conn.dest(config.site.uploadPath));
   });
 
   gulp.task('deploy', function(done){

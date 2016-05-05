@@ -1,9 +1,9 @@
 'use strict';
 
-var url = 'http://www.samplesite.com';
+var url = 'http://www.sampleforhtemplate.com';
 
 var ftp = {
-  address: 'hosting.com',
+  hostname: 'sampleaddress',
   user: 'username',
   password: 'password'
 };
@@ -15,10 +15,10 @@ var dist = "./dist/";
 module.exports = {
   site: {
     url: url,
-    host: ftp.address,
+    host: ftp.hostname,
     user: ftp.user,
     password: ftp.password,
-    uploadPath: '/public_html'
+    uploadPath: '/public_html/'
   },
   paths: {
     src: src,
