@@ -11,11 +11,6 @@
 - Climb.js --- http://github.com/1forh/climb
 - Browser Hack Mixins --- https://github.com/saadeghi/browser-hack-sass-mixins
 
-Named branches are example templates.
-
-- Star Wars --- www.projects.zacharyminner.com/forh-template
-- Space --- www.projects.zacharyminner.com/forh-template-2
-
 ##Setup
 
 You will need a few things before setting up your project.
