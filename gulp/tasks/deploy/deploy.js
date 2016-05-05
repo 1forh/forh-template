@@ -1,10 +1,17 @@
-'use strict';
-
-var gutil = require( 'gulp-util' );
-var ftp = require( 'vinyl-ftp' );
+var gutil = require('gulp-util');
+var ftp = require('vinyl-ftp');
 var sequence = require('run-sequence');
 
+/**
+ * Deploys to a server using FTP
+ * Task configuration located in config.js
+ *
+ * @param {Object} Gulp object
+ * @param {Object} Configuration options from config.js
+ * @return {Deploy} The deploy task
+ */
 module.exports = function(gulp, config) {
+  'use strict';
 
   gulp.task( 'ftp', function () {
 

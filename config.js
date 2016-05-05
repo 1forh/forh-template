@@ -12,6 +12,11 @@ var src = './src/';
 var build = "./build/";
 var dist = "./dist/";
 
+/**
+ * Project-wide configuration
+ *
+ * @return {Object} config
+ */
 module.exports = {
   site: {
     url: url,

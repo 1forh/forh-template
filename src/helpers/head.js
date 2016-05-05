@@ -9,7 +9,6 @@ var config = require( "../../config.js" ).pages;
  * {{#head 'title'}}{{page}}{{/head}}
  * @returns the config option selected for current page
  */
-
 module.exports = function(option, page) {
 
   for( var i = 0; i  < config.length; i++) {

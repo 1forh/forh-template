@@ -1,12 +1,19 @@
-'use strict';
-
 var cssnano = require('gulp-cssnano');
 var purify = require('gulp-purifycss');
 var babel = require('gulp-babel');
 var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
 
+/**
+ * Production tasks
+ * Task configuration located in config.js
+ *
+ * @param {Object} Gulp object
+ * @param {Object} Configuration options from config.js
+ * @return All production tasks
+ */
 module.exports = function(gulp, config) {
+  'use strict';
 
   gulp.task('dist:pages', function(done) {
     return gulp.src(config.paths.build + '*.html')
@@ -23,14 +30,14 @@ module.exports = function(gulp, config) {
       .pipe(gulp.dest(config.paths.dist));
   });
 
-  gulp.task('dist:sass', ['sass'], function(){
+  gulp.task('dist:styles', ['styles'], function(){
     return gulp.src(config.paths.build + 'assets/styles/main.css')
       .pipe(purify([config.paths.build + 'assets/scripts/**/*.js', config.paths.build + '**/*.html']))
       .pipe(cssnano())
       .pipe(gulp.dest(config.paths.dist + 'assets/styles/'));
   });
 
-  gulp.task('dist:javascript', ['javascript'], function(){
+  gulp.task('dist:scripts', ['scripts'], function(){
     return gulp.src(config.paths.build + 'assets/scripts/*.js')
       .pipe(babel({
         "presets": ["es2015"]

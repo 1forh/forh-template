@@ -1,16 +1,21 @@
-'use strict';
-
 var sequence = require('run-sequence');
 
+/**
+ * Runs all tasks
+ * Task configuration located in config.js
+ *
+ * @param {Object} Gulp object
+ * @param {Object} Configuration options from config.js
+ * @return The build tasks
+ */
 module.exports = function(gulp, config) {
+  'use strict';
 
-  // Build the "app_build" folder by running tasks
   gulp.task('build', function(done) {
-    sequence('clean', ['fonts', 'extras', 'pages', 'sass', 'javascript', 'images'], done);
+    sequence('clean', ['fonts', 'extras', 'pages', 'styles', 'scripts', 'images'], done);
   });
 
-  // Build the "app_dist" folder by running tasks
   gulp.task('build:dist', ['clean'], function(done){
-    sequence('build', ['dist:sass', 'dist:pages', 'dist:extras', 'dist:fonts', 'dist:javascript', 'dist:images', 'sitemap'], 'critical', done);
+    sequence('build', ['dist:styles', 'dist:pages', 'dist:extras', 'dist:fonts', 'dist:scripts', 'dist:images', 'sitemap'], 'critical', done);
   });
 };

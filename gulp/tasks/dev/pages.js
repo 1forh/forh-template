@@ -1,10 +1,17 @@
-'use strict';
-
 var panini = require( 'panini' );
 
+/**
+ * Uses Panini to create flat files
+ * Panini GitHub repository --- https://github.com/zurb/panini
+ * Task configuration located in config.js
+ *
+ * @param {Object} Gulp object
+ * @param {Object} Configuration options from config.js
+ * @return {Pages} The pages task
+ */
 module.exports = function(gulp, config) {
+  'use strict';
 
-  // Use panini to copy page templates into finished HTML
   gulp.task('pages', function() {
     gulp.src(config.paths.src + 'static/pages/**/*.{html,hbs,handlebars,php}')
       .pipe(panini ({

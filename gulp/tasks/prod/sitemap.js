@@ -1,12 +1,18 @@
-'use strict';
-
 var sitemap = require('gulp-sitemap');
 
+/**
+ * Creates a sitemap based on the html files in the dist directory
+ * Task configuration located in config.js
+ *
+ * @param {Object} Gulp object
+ * @param {Object} Configuration options from config.js
+ * @return {Sitemap} The sitemap task
+ */
 module.exports = function(gulp, config) {
-  
-  // Creates sitemap based on site url in config.js
+  'use strict';
+
   gulp.task('sitemap', function () {
-    gulp.src([config.paths.build + '*.html', '!' + config.paths.build + 'google*.html'])
+    gulp.src([config.paths.dist + '*.html', '!' + config.paths.dist + 'google*.html'])
       .pipe(sitemap({
           siteUrl: config.site.url,
           changefreq: 'yearly'

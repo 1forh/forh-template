@@ -1,6 +1,14 @@
-'use strict';
-
+/**
+ * Exports all required tasks to gulpfile.js
+ * Task configuration located in config.js
+ *
+ * @param {Object} Gulp object
+ * @param {Object} Configuration options from config.js
+ * @return {Gulp} Gulp
+ */
 module.exports = function(gulp, config){
+  'use strict';
+
   config = require('../config');
 
   // Default task
@@ -15,9 +23,9 @@ module.exports = function(gulp, config){
   require('./tasks/dev/fonts')(gulp, config);
   require('./tasks/dev/extras')(gulp, config);
   require('./tasks/dev/images')(gulp, config);
-  require('./tasks/dev/javascript')(gulp, config);
+  require('./tasks/dev/scripts')(gulp, config);
   require('./tasks/dev/pages')(gulp, config);
-  require('./tasks/dev/sass')(gulp, config);
+  require('./tasks/dev/styles')(gulp, config);
 
   // Production tasks
   require('./tasks/prod/production')(gulp, config);
