@@ -56,8 +56,7 @@ All work is done in the `src/` directory.
     data/
         example.json
     helpers/
-        description.js
-        title.js
+        head.js
     static/
         layouts/
             default.html
