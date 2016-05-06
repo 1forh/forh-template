@@ -15,7 +15,7 @@ module.exports = function(gulp, config) {
     sequence('clean', ['fonts', 'extras', 'pages', 'styles', 'scripts', 'images'], done);
   });
 
-  gulp.task('build:dist', ['clean'], function(done){
+  gulp.task('build:dist', function(done) {
     sequence('build', ['dist:styles', 'dist:pages', 'dist:extras', 'dist:fonts', 'dist:scripts', 'dist:images', 'sitemap'], 'critical', done);
   });
 };
