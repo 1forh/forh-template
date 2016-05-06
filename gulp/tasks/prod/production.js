@@ -30,14 +30,14 @@ module.exports = function(gulp, config) {
       .pipe(gulp.dest(config.paths.dist));
   });
 
-  gulp.task('dist:styles', function(){
+  gulp.task('dist:styles', function() {
     return gulp.src(config.paths.build + 'assets/styles/main.css')
       .pipe(purify([config.paths.build + 'assets/scripts/**/*.js', config.paths.build + '**/*.html']))
       .pipe(cssnano())
       .pipe(gulp.dest(config.paths.dist + 'assets/styles/'));
   });
 
-  gulp.task('dist:scripts', function(){
+  gulp.task('dist:scripts', function() {
     return gulp.src(config.paths.build + 'assets/scripts/*.js')
       .pipe(babel({
         "presets": ["es2015"]
@@ -46,7 +46,7 @@ module.exports = function(gulp, config) {
       .pipe(gulp.dest(config.paths.dist + 'assets/scripts/'));
   });
 
-  gulp.task('dist:images', function(){
+  gulp.task('dist:images', function() {
     return gulp.src(config.paths.build + 'assets/images/**/*')
       .pipe(imagemin({
         progressive: true
