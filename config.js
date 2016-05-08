@@ -3,9 +3,10 @@
 var url = 'http://www.sampleforhtemplate.com';
 
 var ftp = {
-  hostname: 'sampleaddress',
+  hostname: 'sample.com',
   user: 'username',
-  password: 'password'
+  password: 'password',
+  uploadPath: '/public_html/'
 };
 
 var src = './src/';
@@ -23,7 +24,7 @@ module.exports = {
     host: ftp.hostname,
     user: ftp.user,
     password: ftp.password,
-    uploadPath: '/public_html/'
+    uploadPath: ftp.uploadPath
   },
   paths: {
     src: src,
