@@ -5,7 +5,18 @@ $primary-color:#673AB7;
 $secondary-color:#311B92;
 $accent-color:#FF3D00;
 
-/* Foundation 6 */
+/* Font Awesome */
+$fa-font-path: "../fonts" !default;
+
+// The forh20 variable
+$forhtwenty: 4.20em;
+
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.2.1
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
 
 // Dropdown Menu
 $dropdownmenu-background: $white;
@@ -13,13 +24,7 @@ $dropdownmenu-arrow-color: $primary-color;
 $dropdownmenu-border: $primary-color;
 $dropdownmenu-min-width: 220px;
 
-/* Font Awesome */
-$fa-font-path: "../fonts" !default;
-
-// The forh20 variable
-$forhtwenty: 4.20em;
-
-/*!
+/**
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
  * @author Jonathan Suh @jonsuh
