@@ -51,16 +51,18 @@
   <!--[if lt IE 8]>
     <p class="browser-upgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
+  <div class="site-wrapper">
 
-  {{> header}}
+    {{> header}}
 
-  {{#ifpage 'index'}}
-    {{> hero}}
-  {{/ifpage}}
+    <main class="site-main">
+      {{> body}}
+    </main>
 
-  {{> body}}
+    {{> footer}}
 
-  {{> footer}}
+  </div>
+
 
   <button id="climb"></button>
 
