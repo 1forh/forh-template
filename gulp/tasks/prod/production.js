@@ -32,7 +32,10 @@ module.exports = function(gulp, config) {
 
   gulp.task('dist:styles', function() {
     return gulp.src(config.paths.build + 'assets/styles/main.css')
-      .pipe(purify([config.paths.build + 'assets/scripts/**/*.js', config.paths.build + '**/*.html']))
+      .pipe(purify([
+          config.paths.build + 'assets/scripts/**/*.js',
+          config.paths.build + '**/*.html'
+        ]))
       .pipe(cssnano())
       .pipe(gulp.dest(config.paths.dist + 'assets/styles/'));
   });
