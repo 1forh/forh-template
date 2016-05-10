@@ -12,7 +12,7 @@ module.exports = function(gulp, config) {
   'use strict';
 
   gulp.task('sitemap', function () {
-    gulp.src([config.paths.dist + '*.html', '!' + config.paths.dist + 'google*.html'])
+    gulp.src([config.paths.dist + '**/*.html', '!' + config.paths.dist + 'google*.html'])
       .pipe(sitemap({
           siteUrl: config.site.url,
           changefreq: 'yearly'
