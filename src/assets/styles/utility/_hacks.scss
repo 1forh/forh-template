@@ -426,8 +426,8 @@
 }
 
 /*--- Only IE ≥ 11 ---*/
-@mixin only_ie11_above($selector, $map){
-  #{'_:-ms-fullscreen, :root '} #{$selector} {
+@mixin only_ie11_above($map){
+  @at-root _:-ms-fullscreen, :root & {
     @each $property, $value in ($map) {
       #{$property}: $value;
     }

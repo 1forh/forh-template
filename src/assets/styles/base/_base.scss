@@ -31,7 +31,23 @@ iframe {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+
+  /**
+ * Fixes IE bug which occurs when:
+ * display: flex;
+ * flex-direction: column;
+ * min-height: {size};
+ *
+ * Must either not have a min-height or have an explicit height as well
+ * Known issue - http://caniuse.com/#feat=flexbox
+ *
+ */
+  @include only_ie11_above((min-height: initial));
 }
+
+
+
+
 
 .site-main {
   flex-grow: 1;
