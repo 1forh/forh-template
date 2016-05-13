@@ -1,9 +1,9 @@
 /* Global style variables */
 
 /* Theme Colors */
-$primary-color:#673AB7;
-$secondary-color:#311B92;
-$accent-color:#FF3D00;
+$primary-color: #673AB7;
+$secondary-color: #311B92;
+$accent-color: #FF3D00;
 
 /* Font Awesome */
 $fa-font-path: "../fonts" !default;
@@ -34,15 +34,15 @@ $dropdownmenu-min-width: 220px;
 
 // Settings
 // ==================================================
-$hamburger-padding-x                       : 15px !default;
-$hamburger-padding-y                       : 15px !default;
-$hamburger-layer-width                     : 40px !default;
-$hamburger-layer-height                    : 4px !default;
-$hamburger-layer-spacing                   : 6px !default;
-$hamburger-layer-color                     : #000 !default;
-$hamburger-layer-border-radius             : 4px !default;
-$hamburger-hover-opacity                   : 0.7 !default;
-$hamburger-hover-transition-duration       : 0.15s !default;
+$hamburger-padding-x: 15px !default;
+$hamburger-padding-y: 15px !default;
+$hamburger-layer-width: 40px !default;
+$hamburger-layer-height: 4px !default;
+$hamburger-layer-spacing: 6px !default;
+$hamburger-layer-color: #000 !default;
+$hamburger-layer-border-radius: 4px !default;
+$hamburger-hover-opacity: 0.7 !default;
+$hamburger-hover-transition-duration: 0.15s !default;
 $hamburger-hover-transition-timing-function: linear !default;
 
 // To use CSS filters as the hover effect instead of opacity,
