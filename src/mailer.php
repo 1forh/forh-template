@@ -8,6 +8,7 @@
     $name = strip_tags($_POST["name"]);
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
     $message = strip_tags($_POST["message"]);
+
     // Check that data was sent to the mailer.
     if ( empty($name) OR empty($message) ) {
       // Set a 400 (bad request) response code and exit.
@@ -20,6 +21,7 @@
       echo "Oops! Please enter a valid email address and submit the form again.";
       exit;
     }
+
     $headers = "From: " . $email . "\r\n";
     $headers .= "Reply-To: ". $email . "\r\n";
     // $headers .= "CC: " . $carbonCopy . "\r\n";

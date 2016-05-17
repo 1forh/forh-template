@@ -108,3 +108,12 @@
   /* Values for text-overflow are: clip, ellipsis, or a string */
   text-overflow: $overflow;
 }
+
+/* Loader animation */
+@mixin ball-pulse($n: 3, $start: 1) {
+  @for $i from $start through $n {
+    > div:nth-child(#{$i}) {
+      animation: scale 0.75s delay(0.12s, $n, $i) infinite cubic-bezier(.2,.68,.18,1.08);
+    }
+  }
+}

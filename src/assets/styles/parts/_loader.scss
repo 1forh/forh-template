@@ -1,0 +1,35 @@
+/* Loader styles */
+@keyframes scale {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  45% {
+    transform: scale(0.1);
+    opacity: 0.7;
+  }
+  80% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.loader-inner {
+  @include ball-pulse();
+
+  > div {
+    display: none;
+
+    margin: $ball-margin;
+    width: $ball-size;
+    height: $ball-size;
+    background-color: $secondary-color;
+    border-radius: 100%;
+    animation-fill-mode: both;
+
+  }
+
+  &.is-visible  > div{
+    display: inline-block !important;
+  }
+}

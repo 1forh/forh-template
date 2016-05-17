@@ -1,7 +1,11 @@
 {{!-- Form layout --}}
 <p><strong>All fields are required.</strong></p>
 <div id="form-messages"></div>
-
+<div id="form-loader" class="loader-inner ball-pulse">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
 <form action="mailer.php" method="POST" id="ajax-contact" class="contact-form">
   <label for="name">
     Full Name

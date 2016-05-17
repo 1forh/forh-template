@@ -8,3 +8,12 @@
   }
   @return $val;
 }
+
+/**
+ * Loader function
+ * https://github.com/ConnorAtherton/loaders.css/blob/master/src/_functions.scss
+ *
+ */
+@function delay($interval, $count, $index) {
+  @return ($index * $interval) - ($interval * $count);
+}

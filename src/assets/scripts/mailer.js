@@ -1,14 +1,17 @@
 $(function() {
   'use strict';
 
-  var form = $('#ajax-contact');
-  var formMessages = $('#form-messages');
+  var form = '#ajax-contact';
+  var formMessages = '#form-messages';
+  var formLoader = '#form-loader';
 
   // Set up an event listener for the contact form.
   $(form).submit(function(event) {
 
     // Stop the browser from submitting the form.
     event.preventDefault();
+
+    $(formLoader).addClass('is-visible');
 
     var formData = $(form).serialize();
 
@@ -18,7 +21,7 @@ $(function() {
       data: formData
     })
 
-    .done(function(response) {
+    .success(function(response) {
       // Make sure that the formMessages div has the 'success' class.
       $(formMessages).removeClass('error');
       $(formMessages).addClass('success');
@@ -39,10 +42,14 @@ $(function() {
 
       // Set the message text.
       if (data.responseText !== '') {
-          $(formMessages).text(data.responseText);
+        $(formMessages).text(data.responseText);
       } else {
-          $(formMessages).text('Oops! An error occured and your message could not be sent.');
+        $(formMessages).text('Oops! An error occured and your message could not be sent.');
       }
+    })
+
+    .complete(function() {
+      $(formLoader).removeClass('is-visible');
     });
   });
 });
