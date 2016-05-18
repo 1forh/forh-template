@@ -4,6 +4,14 @@
 
 }
 
+.nav-toggle {
+
+  .hamburger {
+    display: flex;
+    align-items: center;
+  }
+}
+
 // Menu active class styles
 .menu .active > a {
   background-color: $secondary-color;

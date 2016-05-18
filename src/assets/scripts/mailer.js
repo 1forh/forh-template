@@ -11,6 +11,7 @@ $(function() {
     // Stop the browser from submitting the form.
     event.preventDefault();
 
+    // Show loader while gathering data
     $(formLoader).addClass('is-visible');
 
     var formData = $(form).serialize();
@@ -49,6 +50,7 @@ $(function() {
     })
 
     .complete(function() {
+      // Hide loader when finished processing data
       $(formLoader).removeClass('is-visible');
     });
   });

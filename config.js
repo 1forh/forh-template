@@ -78,6 +78,7 @@ module.exports = {
       'bower_components/jquery/dist/jquery.js',
       'bower_components/what-input/what-input.js',
       'bower_components/foundation-sites/dist/foundation.min.js',
+      src + 'assets/scripts/map.js',
       src + 'assets/scripts/climb.js',
       src + 'assets/scripts/mailer.js',
       src + 'assets/scripts/main.js'
@@ -88,10 +89,7 @@ module.exports = {
       src + 'favicon.{png,ico,jpg}',
       src + 'robots.txt',
       src + 'humans.txt',
-      src + '*html',
-      src + '*.xml',
-      src + '.htaccess',
-      src + '*.php'
+      src + '*.{html,xml,kml,php,htaccess}'
     ]
   }
 };
