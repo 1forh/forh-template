@@ -1,4 +1,3 @@
-var format = require('util').format;
 var config = require( "../../config.js" ).pages;
 
 /**
@@ -21,6 +20,6 @@ module.exports = function(option, page) {
     }
   }
 
-  return format('%s', option);
+  return option;
 
 }
