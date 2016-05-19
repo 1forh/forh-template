@@ -1,3 +1,4 @@
+
 /**
  * Google maps JavaScript API
  * https://developers.google.com/maps/documentation/javascript/reference#MapTypeStyleFeatureType
@@ -10,11 +11,13 @@ var initMap = function() {
    * https://support.google.com/fusiontables/answer/1182141
    *
    */
-  var state_id = {
-    oh: '1Hky8qXEOcJQmTbndHmrHWo8-yhRBLV3U31HwEg',
-    ny: '1uel5gE4TfUpdxb-EIH0Pqn5RZJOZo81Ltf-DXA',
-    pa: '1uel5gE4TfUpdxb-EIH0Pqn5RZJOZo81Ltf-DXA',
-  };
+  // var state_ids = {
+  //   oh: '1Hky8qXEOcJQmTbndHmrHWo8-yhRBLV3U31HwEg',
+  //   ny: '1V5UR5lV1rUQuJFwxPuI6fkd8xuq2ubxRtguCng',
+  //   pa: '1uel5gE4TfUpdxb-EIH0Pqn5RZJOZo81Ltf-DXA',
+  // };
+
+  // var state_id = state_ids.oh;
 
   /* Location details */
   var title = 'Pizza Hut';
@@ -25,11 +28,11 @@ var initMap = function() {
   var directions = 'https://goo.gl/maps/EdUSZB1gqwu';
 
   /* County variable must be wrapped in single quotes if it has space or dash */
-  var county = "'OH-Stark'";
+  // var county = "'OH-Stark'";
 
   /* Styles for county polygon container */
-  var fill_color = '#000000';
-  var fill_opacity = 0.1;
+  // var fill_color = '#000000';
+  // var fill_opacity = 0.1;
 
   /**
    * {location.info} Message displayed in tooltip above marker
@@ -114,25 +117,25 @@ var initMap = function() {
   });
 
   // The outlined county or counties and their styles
-  var layer = new google.maps.FusionTablesLayer({
-    query: {
-      select: "geometry",
-      from: state_id.oh,
-      where: "'State-County' = " + county
-    },
-    styles: [
-      {
-        polygonOptions: {
-          fillColor: fill_color,
-          fillOpacity: fill_opacity
-        }
-      }
-    ]
-  });
+  // var layer = new google.maps.FusionTablesLayer({
+  //   query: {
+  //     select: "geometry",
+  //     from: state_id,
+  //     where: "'State-County' = " + county
+  //   },
+  //   styles: [
+  //     {
+  //       polygonOptions: {
+  //         fillColor: fill_color,
+  //         fillOpacity: fill_opacity
+  //       }
+  //     }
+  //   ]
+  // });
 
   /* Call the map styles and add county layer(s) to map */
   map.mapTypes.set('map_style', styled_map);
   map.setMapTypeId('map_style');
-  layer.setMap(map);
+  // layer.setMap(map);
 
 };
