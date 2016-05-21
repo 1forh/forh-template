@@ -2,8 +2,8 @@ $(function() {
   'use strict';
 
   var form = '#ajax-contact';
-  var formMessages = '#form-messages';
-  var formLoader = '#form-loader';
+  var form_message = '#form-message';
+  var form_loader = '#form-loader';
 
   // Set up an event listener for the contact form.
   $(form).submit(function(event) {
@@ -12,7 +12,7 @@ $(function() {
     event.preventDefault();
 
     // Show loader while gathering data
-    $(formLoader).addClass('is-visible');
+    $(form_loader).addClass('is-visible');
 
     var formData = $(form).serialize();
 
@@ -23,12 +23,12 @@ $(function() {
     })
 
     .success(function(response) {
-      // Make sure that the formMessages div has the 'success' class.
-      $(formMessages).removeClass('error');
-      $(formMessages).addClass('success');
+      // Make sure that the form_message div has the 'success' class.
+      $(form_message).removeClass('error');
+      $(form_message).addClass('success');
 
       // Set the message text.
-      $(formMessages).text(response);
+      $(form_message).text(response);
 
       // Clear the form.
       $('#name').val('');
@@ -37,21 +37,21 @@ $(function() {
     })
 
     .fail(function(data) {
-      // Make sure that the formMessages div has the 'error' class.
-      $(formMessages).removeClass('success');
-      $(formMessages).addClass('error');
+      // Make sure that the form_message div has the 'error' class.
+      $(form_message).removeClass('success');
+      $(form_message).addClass('error');
 
       // Set the message text.
       if (data.responseText !== '') {
-        $(formMessages).text(data.responseText);
+        $(form_message).text(data.responseText);
       } else {
-        $(formMessages).text('Oops! An error occured and your message could not be sent.');
+        $(form_message).text('Oops! An error occured and your message could not be sent.');
       }
     })
 
     .complete(function() {
       // Hide loader when finished processing data
-      $(formLoader).removeClass('is-visible');
+      $(form_loader).removeClass('is-visible');
     });
   });
 });

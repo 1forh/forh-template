@@ -1,20 +1,21 @@
 /* Form element styles */
-#form-messages {
+.form-wrapper {
+
+}
+
+#form-message {
   margin-bottom: 1em;
   font-weight: bold;
-}
 
-#form-messages.success {
-  color: green;
-}
-
-#form-messages.error {
-  color: red;
-}
-
-.contact-form {
-
-  textarea {
-    min-height: 130px;
+  &.success {
+    color: green;
   }
+
+  &.error {
+    color: red;
+  }
+}
+
+textarea {
+  min-height: 130px;
 }

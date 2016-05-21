@@ -10,7 +10,7 @@
     $message = strip_tags($_POST["message"]);
 
     // Check that data was sent to the mailer.
-    if ( empty($name) OR empty($message) ) {
+    if ( empty($name) OR empty($email) OR empty($message) ) {
       // Set a 400 (bad request) response code and exit.
       http_response_code(400);
       echo "Oops! There was a problem with your submission. Please complete the form and try again.";

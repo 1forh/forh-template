@@ -1,26 +1,29 @@
 {{!-- Form layout --}}
-<p><strong>All fields are required.</strong></p>
-<div id="form-messages"></div>
-<div id="form-loader" class="loader-inner ball-pulse">
-  <div></div>
-  <div></div>
-  <div></div>
+<div class="wrapper">
+  <p><strong>All fields are required.</strong></p>
+  <form action="mailer.php" method="POST" id="ajax-contact" class="contact-form">
+
+    <label for="name">
+      Full Name
+      <input type="text" name="name" id="name" required>
+    </label>
+
+    <label for="email">
+      Email Address
+      <input type="email" name="email" id="email" required>
+    </label>
+
+    <label for="message">
+      Message
+      <textarea name="message" id="message"></textarea>
+    </label>
+
+    <input type="submit" value="Submit" name="submit" id="submit" class="button expanded" onClick="ga('send', 'pageview', '/thank-you.html');">
+    <div id="form-loader" class="loader-inner ball-pulse">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div id="form-message"></div>
+  </form>
 </div>
-<form action="mailer.php" method="POST" id="ajax-contact" class="contact-form">
-  <label for="name">
-    Full Name
-    <input type="text" name="name" id="name" required>
-  </label>
-
-  <label for="email">
-    Email Address
-    <input type="email" name="email" id="email" required>
-  </label>
-
-  <label for="message">
-    Message
-    <textarea name="message" id="message"></textarea>
-  </label>
-
-  <input type="submit" value="Submit" name="submit" id="submit" class="button" onClick="ga('send', 'pageview', '/thank-you.html');">
-</form>
