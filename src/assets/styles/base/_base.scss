@@ -45,10 +45,6 @@ iframe {
   @include only_ie11_above((min-height: initial));
 }
 
-
-
-
-
 .site-main {
   flex-grow: 1;
 }
