@@ -5,7 +5,6 @@
 - Gulp --- http://gulpjs.com
 - Panini --- https://github.com/zurb/panini
 - Sass --- http://sass-lang.com
-
 - Foundation 6 --- http://foundation.zurb.com
 - Font Awesome --- https://fortawesome.github.io/Font-Awesome
 - Climb.js --- http://github.com/1forh/climb
@@ -15,8 +14,8 @@
 
 You will need a few things before setting up your project.
 
-1. Node.js - https://nodejs.org/en
-2. Bower - http://bower.io
+- Node.js - https://nodejs.org/en
+- Bower - http://bower.io
 
 After installing Node.js and Bower, navigate to your local project directory and clone the repository:
 
