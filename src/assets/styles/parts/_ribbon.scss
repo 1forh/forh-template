@@ -1,0 +1,31 @@
+/**
+ * Ribbon styles
+ * Place as first-child of .row
+ *
+ * <div class="row">
+ *  <div class="ribbon">
+ *    <span>Check This Out</span>
+ *  </div>
+ * </div>
+ *
+ */
+.ribbon {
+  position: absolute;
+  margin-top: -85px;
+  padding: 0.3em 0.6em;
+  color: $white;
+  background-color: $accent-color;
+
+  &::before {
+    content: '';
+    position: absolute;
+    border-right: 10px solid darken($accent-color, 15%);
+    border-top: 14px solid transparent;
+    display: block;
+    height: 0;
+    left: -10px;
+    position: absolute;
+    top: 0;
+    width: 9px;
+  }
+}
