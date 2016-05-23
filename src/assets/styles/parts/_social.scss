@@ -1,0 +1,50 @@
+.social-list {
+  @extend .list-reset;
+
+  &--item {
+    display: inline-block;
+    margin: -1px 1px 5px 0;
+    color: $white;
+    border-radius: 100%;
+    overflow: hidden;
+    @include shadow-1;
+
+    &.facebook {
+      background-color: #3b5998;
+    }
+
+    &.twitter {
+      background-color: #55acee;
+    }
+
+    &.google-plus {
+      background-color: #dc4e41;
+    }
+
+    &.linked-in {
+      background-color: #0077b5;
+    }
+  }
+
+  &--link {
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: $secondary-color;
+    text-align: center;
+    background-color: $white;
+    @include transition;
+
+    &:hover {
+      color: $white;
+      background-color: inherit;
+    }
+
+    &:focus,
+    &:active {
+
+    }
+  }
+}
