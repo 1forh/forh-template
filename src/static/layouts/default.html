@@ -29,6 +29,8 @@
   <meta itemprop="description" content="{{#head 'description'}}{{page}}{{/head}}">
   {{/unlesspage}}
 
+  <link rel="canonical" href="{{#head 'url'}}{{page}}{{/head}}">
+
   <link rel="icon" type="image/png" href="favicon.png">
 
   <link rel="stylesheet" href="{{root}}assets/styles/main.css">
@@ -58,6 +60,7 @@
 
     <main class="site-main" role="main">
       {{> body}}
+      {{> form}}
     </main>
 
     {{> footer}}

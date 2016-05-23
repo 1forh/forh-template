@@ -4,6 +4,7 @@ $(function() {
   var form = '#ajax-contact';
   var form_message = '#form-message';
   var form_loader = '#form-loader';
+  var submit = '#submit';
 
   // Set up an event listener for the contact form.
   $(form).submit(function(event) {
@@ -13,6 +14,7 @@ $(function() {
 
     // Show loader while gathering data
     $(form_loader).addClass('is-visible');
+    $(form_message).addClass('callout');
 
     var formData = $(form).serialize();
 
@@ -24,7 +26,7 @@ $(function() {
 
     .success(function(response) {
       // Make sure that the form_message div has the 'success' class.
-      $(form_message).removeClass('error');
+      $(form_message).removeClass('alert');
       $(form_message).addClass('success');
 
       // Set the message text.
@@ -34,12 +36,14 @@ $(function() {
       $('#name').val('');
       $('#email').val('');
       $('#message').val('');
+      $(submit).addClass('disabled');
+
     })
 
     .fail(function(data) {
-      // Make sure that the form_message div has the 'error' class.
+      // Make sure that the form_message div has the 'alert' class.
       $(form_message).removeClass('success');
-      $(form_message).addClass('error');
+      $(form_message).addClass('alert');
 
       // Set the message text.
       if (data.responseText !== '') {

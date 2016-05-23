@@ -1,6 +1,6 @@
 'use strict';
 
-var url = 'http://www.sampleforhtemplate.com';
+var url = 'http://sampleforhtemplate.com';
 
 var ftp = {
   hostname: 'sample.com',
